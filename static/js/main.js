@@ -1,44 +1,53 @@
-// 2023-03-18 Glenn Wadstedt, updated 2023-03-18
+// 2023-03-18 Glenn Wadstedt, updated 2023-03-19
 
 var dict = {}
 d3.csv('./data/mimer.csv', function(data) {    
-    dict[data.ACRONYM] = data    
+    if (dict[data.ACRONYM]) {      
+      dict[data.ACRONYM].push(JSON.stringify(data));      
+    }
+    else {
+      dict[data.ACRONYM] = [JSON.stringify(data)];
+    }        
 });
 
 document.getElementById("searchInput").addEventListener("keypress", function(event) {  
   if (event.key === "Enter") {    
     event.preventDefault();    
-    getAcronym();
+    findAcronym();
   }
 });
 
-const getAcronym = () => {  
-  var acronym = document.getElementById('searchInput').value;
+const findAcronym = () => {  
+  var acronym = document.getElementById("searchInput").value;
 
   if (dict[acronym.toUpperCase()]) {
     updateResult(dict[acronym.toUpperCase()])
   }
   else {
-    document.querySelector('#resultAcronym').innerText = ""
-    document.querySelector('#resultDefinition').innerText = ""
-    document.querySelector('#resultComment').innerText = ""
-    document.querySelector('#resultLink').innerText = ""
-    document.querySelector('#resultLink').href = ""    
-  }  
+    document.getElementById("cardContent").innerHTML = "";
+  } 
 
-  document.getElementById('searchInput').value = '';
+  document.getElementById("searchInput").value = "";  
 }
 
-const updateResult = (data) => {
-  if (data["ACRONYM"]) { 
-    document.querySelector('#resultAcronym').innerText = data["ACRONYM"]
-    document.querySelector('#resultDefinition').innerText = data["Definition"]
-    document.querySelector('#resultComment').innerText = data["Comment"]    
-    document.querySelector('#resultUpdatedAt').innerText = 'Last update: ' + data["Updated at"]
-    if(data["Link"]) {
-      document.querySelector('#resultLink').innerText = "Source"
-      document.querySelector('#resultLink').href = data["Link"]
-    }
+const updateResult = (dataArray) => {
+  // erase previous card(s)
+  document.getElementById("cardContent").innerHTML = "";  
+  
+  for (const item of dataArray) {
+    var data = JSON.parse(item);
+    text  = '<div class="card" style="width: 100%;">';
+    text += '  <div class="card-body">';
+    text += '    <h5 class="card-title"">' + data["ACRONYM"] +' </h5>';
+    text += '    <h6 class="card-subtitle mb-2 text-muted">'+ data["Definition"] +'</h6>';
+    text += '    <p class="card-text">'+ data["Comment"] +'</p>';
+    text += '    <a href="'+ data["Link"] +'" class="card-link" target="_blank">Link (new tab)</a>';
+    text += '    <p class="card-text text-muted">'+ 'Last update: ' + data["Updated at"] +'</p>';
+    text += '  </div>';
+    text += '</div>';
+    ""
+    // add card
+    document.getElementById("cardContent").innerHTML += text;
   }
 }
 
@@ -77,45 +86,7 @@ const formatNumber = (n) => {
   return "" + n;
 }
 
-index= 0;
-startIndex = 0;
-endIndex = 0;
-const TEXT_TO_ANIMATE =
-"An old silent pond... \
-A frog jumps into the pond, \
-splash! Silence again. \
-\
-Autumn moonlight- \
-a worm digs silently \
-into the chestnut. \
-\
-In the twilight rain \
-these brilliant-hued hibiscus - \
-A lovely sunset. \
-- Matsuo Basho (1644-1694)";
-
-const MAX_TITLE_LENGTH = 30;
-
-const updateTitle = () => {  
-  titelHandle = document.querySelector('title')
-  if (titelHandle) {    
-    if (endIndex < TEXT_TO_ANIMATE.length) {
-      endIndex = index++ % TEXT_TO_ANIMATE.length + 1;
-    }    
-    if (endIndex > MAX_TITLE_LENGTH) {
-      startIndex++;
-    } 
-    if (startIndex == TEXT_TO_ANIMATE.length - 1) {
-      index = 0;
-      startIndex = 0;
-      endIndex = 1;
-    }     
-    titelHandle.textContent = TEXT_TO_ANIMATE.substring(startIndex, endIndex);    
-  }
-}
-
-const init = () => {
-  setInterval(updateTitle, 500);
+const init = () => {  
   setInterval(updateClock, 1000);
 }
 
