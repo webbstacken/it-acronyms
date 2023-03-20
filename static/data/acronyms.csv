@@ -96,7 +96,7 @@ EXT4,Linux file system,"Default. Journalling. Robust. If in doubt, EXT4",,2022-1
 FCS,Frame Check Sequence,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 FDA,Food and Drug Administration,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 FEMA,Federal Emergency Management Agency,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
-FIM,File Integrity Monitoring,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+FIM,File integrity monitoring ,"File integrity monitoring (FIM) is an internal control or process that performs the act of validating the integrity of operating system and application software files using a verification method between the current file state and a known, good baseline.",https://en.wikipedia.org/wiki/File_integrity_monitoring,2023-03-13T09:38:00Z,GW,2023-03-13T09:38:00Z,GW
 FIRST,Forum of Incident Response and Security Teams ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 FQDN,Fully Qualified Domain Name,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 FTP,File Transfer Protocol. ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
@@ -167,6 +167,7 @@ LDAP,Lightweight Directory Access Protocol ,,,2022-12-15T11:41:25Z,GW,2022-12-15
 LLC,Logical Link Control ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 LSASS,Local Security Authority Subsystem Service ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 LSU,Link State Update,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+LUKS,Linux Unified Key Setup ,The Linux Unified Key Setup (LUKS) is a disk encryption specification created by Clemens Fruhwirth in 2004 and was originally intended for Linux.,https://en.wikipedia.org/wiki/Linux_Unified_Key_Setup,2023-03-09T09:35:00Z,GW,2023-03-09T09:35:00Z,GW
 MAC,Mandatory Access Control ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 MAC,Media Access Control,Network interface MAC address,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 MAC,Message Authentication Code,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
@@ -207,6 +208,7 @@ OEM,Original Equipment Manufacturer,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:2
 OMB, Office of Management and Budget,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 OPC,Open Compute Project,,https://www.opencompute.org/,2023-01-19T14:35:00Z,GW,2023-01-19T14:35:00Z,GW
 OPEX,Operaional Expenditure,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+OS,Operating System,"An operating system (OS) is system software that manages computer hardware and software resources, and provides common services for computer programs.",https://en.wikipedia.org/wiki/Operating_system,2023-03-09T09:35:00Z,GW,2023-03-09T09:35:00Z,GW
 OSI,Open System Interconnection (OSI) Reference Model,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 OSPF,Open Shortest Path First,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 OSSEC,Open Source HIDS SECurity ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
@@ -221,7 +223,7 @@ PAN,Personal Area Network,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 PAT,Port Address Translation ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 PCAP,Packet Capture,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 PEP,Python Enhancement Proposal,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
-PGP,Pretty Good Privacy ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+PGP,Pretty Good Privacy ,"Pretty Good Privacy (PGP) is an encryption program that provides cryptographic privacy and authentication for data communication. PGP is used for signing, encrypting, and decrypting texts, e-mails, files, directories, and whole disk partitions and to increase the security of e-mail communications. Phil Zimmermann developed PGP in 1991.",https://en.wikipedia.org/wiki/Pretty_Good_Privacy,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 PHI,Protected Health Information,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 PII,Personally identifiable information ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 PIN,Personal Identification Number," a PIN number or PIN code, is a numeric (sometimes alpha-numeric) passcode used in the process of authenticating a user accessing a system.",,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
@@ -308,6 +310,7 @@ TQM,Total Quality Management ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 TTP,Trusted Third Party,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 TTP,"Tactics, Techniques, and Procedures ",,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 UDP,User Datagram Protocol,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+UEFI,Unified Extensible Firmware Interface,UEFI (Unified Extensible Firmware Interface) is a set of specifications written by the UEFI Forum. They define the architecture of the platform firmware used for booting and its interface for interaction with the operating system.,https://en.wikipedia.org/wiki/UEFI,2023-03-09T09:35:00Z,GW,2023-03-09T09:35:00Z,GW
 UID,User ID,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 URIS,Uniform Resource Identifiers ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 URL,Uniform Resource Locator ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
@@ -338,7 +341,3 @@ XFS,Linux file system,"Good industry standard. Good performance when dealing wit
 YUM,Yellow Dog Updater,"Just as APT is a more advanced front-end for dpkg, YUM (Yellow Dog Updater) is the most popular choice as front-end for RPM, the basic package management software for RHEL operating systems.",,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 ZFS,"Z File System, Linux file system","Good industry standard. Good performance when dealing with large files, but has worse performance when dealing with many small files",,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 ZPF,Zone Policy Firewalls,,,2022-12-22T11:01:00Z,GW,2022-12-22T11:01:00Z,GW
-UEFI,Unified Extensible Firmware Interface,UEFI (Unified Extensible Firmware Interface) is a set of specifications written by the UEFI Forum. They define the architecture of the platform firmware used for booting and its interface for interaction with the operating system.,https://en.wikipedia.org/wiki/UEFI,2023-03-09T09:35:00Z,GW,2023-03-09T09:35:00Z,GW
-OS,Operating System,"An operating system (OS) is system software that manages computer hardware and software resources, and provides common services for computer programs.",https://en.wikipedia.org/wiki/Operating_system,2023-03-09T09:35:00Z,GW,2023-03-09T09:35:00Z,GW
-LUKS,Linux Unified Key Setup ,The Linux Unified Key Setup (LUKS) is a disk encryption specification created by Clemens Fruhwirth in 2004 and was originally intended for Linux.,https://en.wikipedia.org/wiki/Linux_Unified_Key_Setup,2023-03-09T09:35:00Z,GW,2023-03-09T09:35:00Z,GW
-FIM,File integrity monitoring ,"File integrity monitoring (FIM) is an internal control or process that performs the act of validating the integrity of operating system and application software files using a verification method between the current file state and a known, good baseline.",https://en.wikipedia.org/wiki/File_integrity_monitoring,2023-03-13T09:38:00Z,GW,2023-03-13T09:38:00Z,GW
