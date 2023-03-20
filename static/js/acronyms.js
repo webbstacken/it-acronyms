@@ -24,7 +24,7 @@ const addAcronymSearchField = (document) => {
   text  = '<div style="margin-top:20px;" class="container">';        
   text += '  <div class="row">';
   text += '    <div class="col-12">';
-  text += '      <input id="searchInput" type="text" class="form-control" placeholder="IT acronym search e.g. radius" aria-label="IT acronym search e.g. radius">';
+  text += '      <input id="searchInput" type="text" autocomplete="off" class="form-control" placeholder="IT acronym search e.g. radius" aria-label="IT acronym search e.g. radius">';
   text += '    </div>';
   text += '  </div>';
   text += '  <div class="row">';
@@ -37,23 +37,18 @@ const addAcronymSearchField = (document) => {
   document.getElementById("centerId").innerHTML += text;
 }
 
-const addCards = (document) => {  
-  var acronym = document.getElementById("searchInput").value;
-  var acronyms = findAcronym(acronym.toUpperCase());
-
+const addCards = (document, acronyms) => {  
   if (acronyms) {
     addResultCards(document, acronyms);
   }
   else {
     document.getElementById("cardContent").innerHTML = "";
-  } 
-
-  document.getElementById("searchInput").value = "";  
+  }   
 }
 
 const addResultCards = (document, acronymArray) => {
   // erase previous card(s)
-  document.getElementById("cardContent").innerHTML = "";  
+  //document.getElementById("cardContent").innerHTML = "";  
   
   for (const row of acronymArray) {
     var data = JSON.parse(row);
@@ -80,13 +75,20 @@ const setupView = (document) => {
 }
 
 const setupEventListener = (document) => {
-  document.getElementById("searchInput").addEventListener("keypress", function(event) {  
-    if (event.key === "Enter") {    
-      event.preventDefault();    
-      addCards(document);
-    }
-  });
-}
+  //acronymDictionary.sort((a, b) => (a.alphabeth < b.alphabeth ? 1 : -1));
+  document.getElementById("searchInput").addEventListener("input", function(event) {    
+    document.getElementById("cardContent").innerHTML = "";  
+    var searchTerm = document.getElementById("searchInput").value.toUpperCase();
+    if (searchTerm !== "") {
+      for (const item in acronymDictionary) {        
+        if (item.startsWith(searchTerm)){
+          var acronyms = findAcronym(item);    
+          addCards(document, acronyms);
+        }        
+      };          
+    }      
+  })
+};
 
 export function initAcronyms(document) {  
   setupView(document);
