@@ -1,4 +1,4 @@
-// 2023-03-18 Glenn Wadstedt, updated 2023-03-19
+// 2023-03-18 Glenn Wadstedt, updated 2023-03-20
 
 const ACRONYMS_FILE_PATH = "./static/data/acronyms.csv";
 const acronymDictionary = {}

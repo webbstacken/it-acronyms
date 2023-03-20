@@ -1,4 +1,4 @@
-// 2023-03-19 Glenn Wadstedt, updated 2023-03-19
+// 2023-03-19 Glenn Wadstedt, updated 2023-03-20
 const addSearchField = (document) => {
   var text = "";
   text  = '<div style="margin-top:20px;" class="container">';        
