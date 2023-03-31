@@ -1,5 +1,5 @@
 // 2023-03-18 Glenn Wadstedt, updated 2023-03-20
-var acronymDictionary = new AcronymDictionary("./static/data/acronyms.csv");
+const acronymDictionary = new AcronymDictionary("./static/data/acronyms.csv");    
 
 const addAcronymSearchField = (document) => {
   var text = "";
@@ -29,27 +29,30 @@ const addCards = (document, acronyms) => {
 }
 
 const addResultCards = (document, acronymArray) => {
-  // erase previous card(s)
-  //document.getElementById("cardContent").innerHTML = "";  
-  
-  for (const row of acronymArray) {
-    console.log(row);
-    var data = JSON.parse(row);
-    var text = "";
-    text  = '<div class="card" style="width: 100%; margin-top:5px;">';
-    text += '  <div class="card-body">';
-    text += '    <h5 class="card-title"">' + data["ACRONYM"] +' </h5>';
-    text += '    <h6 class="card-subtitle mb-2 text-muted">'+ data["Definition"] +'</h6>';
-    text += '    <p class="card-text">'+ data["Comment"] +'</p>';    
-    if (data["Link"]) {
-      text += '    <a href="'+ data["Link"] +'" class="card-link" target="_blank" data-toggle="tooltip" data-placement="top" title="Open link in new tab">Link</a>';
-    }
-    text += '    <p class="card-text text-muted small">'+ 'Last updated: ' + data["Updated at"] +'</p>';
-    text += '  </div>';
-    text += '</div>';
-    
-    // add card
-    document.getElementById("cardContent").innerHTML += text;
+  try {  
+        acronymArray.forEach((row) => {      
+          row.forEach((element) => {         
+            var data = JSON.parse(element);
+            var text = "";
+            text  = '<div class="card" style="width: 100%; margin-top:5px;">';
+            text += '  <div class="card-body">';
+            text += '    <h5 class="card-title"">' + data["Acronym"] +' </h5>';
+            text += '    <h6 class="card-subtitle mb-2 text-muted">'+ data["Definition"] +'</h6>';
+            text += '    <p class="card-text">'+ data["Comment"] +'</p>';                
+            if (data["Link"]) {
+              text += '    <a href="'+ data["Link"] +'" class="card-link" target="_blank" data-toggle="tooltip" data-placement="top" title="Open link in new tab">Link</a>';
+            }
+            text += '    <p class="card-text text-muted small">'+ 'Last updated: ' + data["UpdatedAt"] +'</p>';
+            text += '  </div>';
+            text += '</div>';
+        
+            // add card
+            document.getElementById("cardContent").innerHTML += text;
+          });
+        });
+      }  
+  catch (e) {
+    console.log(e);
   }
 }
 
@@ -59,7 +62,8 @@ const setupView = (document) => {
 
 const setupEventListener = (document) => {  
   document.getElementById("searchInput").addEventListener("input", function(event) {    
-    document.getElementById("cardContent").innerHTML = "";  
+    document.getElementById("cardContent").innerHTML = ""; 
+    
     var query = document.getElementById("searchInput").value.toUpperCase();
     if (query !== "") {
       var acronyms = acronymDictionary.getItems(query);

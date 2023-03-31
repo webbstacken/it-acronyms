@@ -15,17 +15,18 @@ class AcronymDictionary{
         });
         
         tempItems.forEach((element) => {            
-            if (self.#dictionary[element.ACRONYM]) {      
-                self.#dictionary[element.ACRONYM].push(JSON.stringify(element));      
+            if (self.#dictionary[element.Acronym]) {      
+                self.#dictionary[element.Acronym].push(JSON.stringify(element));      
             }
             else {
-                self.#dictionary[element.ACRONYM] = [JSON.stringify(element)];
+                self.#dictionary[element.Acronym] = [JSON.stringify(element)];
             }
         })
     }
 
     #getItem(query) {
         try {
+            var item = this.#dictionary[query.toUpperCase()];
             return this.#dictionary[query.toUpperCase()];
         } catch(e) {
             return undefined;

@@ -1,7 +1,7 @@
 // 2023-03-19 Glenn Wadstedt, updated 2023-03-19
 
-const updateClock = () => {    
-  var clockHandle = document.querySelector("#clock")   
+const updateClock = (clockId) => {    
+  var clockHandle = document.querySelector(clockId)   
   if (clockHandle) {
     var date = new Date()  
     clockHandle.innerText = getUtcDaytime(date) + "\n " + getLocaleDaytime(date);
@@ -35,6 +35,9 @@ const formatNumber = (n) => {
   return "" + n;
 }
 
-export function initClock(window) {
-  window.setInterval(updateClock, 1000);   
+export function initClock(window, clockId) {
+  // https://medium.com/programming-essentials/how-to-pass-arguments-to-settimeout-and-setinterval-callbacks-520f13c47e58
+  window.setInterval(() => {
+    updateClock(clockId)
+   }, 1000);     
 }

@@ -1,4 +1,4 @@
-ACRONYM,Definition,Comment,Link,Created at,Created by,Updated at,Updated by
+Acronym,Definition,Comment,Link,CreatedAt,CreatedBy,UpdatedAt,UpdatedBy
 321,3-2-1 rule,"The 3-2-1 rule says there should be at least three copies or versions of data stored on two different pieces of media, one of which is off-site",https://www.thebroadcastbridge.com/content/entry/13084/protect-your-data-with-a-b-c-and-3-2-1,2023-01-19T14:35:00Z,GW,2023-01-19T14:35:00Z,GW
 2FA,Two-Factor Authentication ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 AAA,Authentication Authorization Accounting/Auditing,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
@@ -14,7 +14,7 @@ AKA,Also Known As,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 AMP,Advanced Malware Protection,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 ANSI,American National Standards Institute,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 API,Application Programming Interface,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
-APT,Advanced Package Tool ,"APT (Advanced Package Tool) is a more advanced front-end for dpkg (Debian Package), the lowest-level package management system for Debian-based Linux distributions.  ",,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+APT,Advanced Package Tool,"APT (Advanced Package Tool) is a more advanced front-end for dpkg (Debian Package), the lowest-level package management system for Debian-based Linux distributions.",,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 APT,Advanced Persistent Threat,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 ARP,Address Resolution Protocol,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 ATM,Asynchronous Transfer Mode,"The acronym ATM stands for Asynchronous Transfer Mode and refers to a communication protocol which can be used to transfer data, videos and speech. ",,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
@@ -84,14 +84,14 @@ DSL,Domain Specific Language ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 DSRM,Directory Services Restore Password,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 DVR,digital video recorder,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 EAC,Extended Access Control,"This protects the holder's privacy, including fingerprints that may be stored on the biometric chip.",,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
-EAP, Extensible Access Protocol,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+EAP,Extensible Access Protocol,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 ECDSA, Elliptic Curve Digital Signature Algorithm,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 EGP,Exterior Gateway Protocol,"exchanges routing information in different ASs, for example, Border Gateway Protocol (BGP)",https://support.huawei.com/enterprise/en/doc/EDOC1100086956,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 EHT,Electronic Health Record,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 EKM,Electronic Key Management,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 EKMS, Electronic Key Management System,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 ELKE,"Elasticsearch, Logstash, and Kibana ",,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
-EMT, Emergency Medical Technician,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+EMT,Emergency Medical Technician,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 EXT4,Linux file system,"Default. Journalling. Robust. If in doubt, EXT4",,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 FCS,Frame Check Sequence,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 FDA,Food and Drug Administration,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
@@ -100,7 +100,7 @@ FIM,File integrity monitoring ,"File integrity monitoring (FIM) is an internal c
 FIRST,Forum of Incident Response and Security Teams ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 FQDN,Fully Qualified Domain Name,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 FTP,File Transfer Protocol. ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
-GDOI, Group Domain of Interpretation,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+GDOI,Group Domain of Interpretation,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 GDPR,General Data Protection Regulation ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 GID,Group ID,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 GKM,Group Key Management,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
@@ -127,14 +127,14 @@ IBE,Identity=Based Encryption,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 IBKM, Identity-Based Key Management,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 ICAAN,Internet Corporation For Assigned Names and Numbers,"The Internet Corporation for Assigned Names and Numbers is an American multistakeholder group and nonprofit organization responsible for coordinating the maintenance and procedures of several databases related to the namespaces and numerical spaces of the Internet, ensuring the network's stable and secure operation",https://www.icann.org/,2023-01-30T08:03:00Z,GW,2023-01-30T08:03:00Z,GW
 ICMP,Internet Control Message Protocol ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
-ID, Identity,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+ID,Identity,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 IDAAS,identity as a Service,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
-IDKM, Identity-Based Key Management,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+IDKM,Identity-Based Key Management,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 IDN,Identity Defined Networking ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 IDPS,Intrusion Detection Prevention System ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 IDS,Intrusion Detection System,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 IEC,International Electrotechnical Commission ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
-IEEE, Institute of Electronic and Electrical Engineers,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+IEEE,Institute of Electronic and Electrical Engineers,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 IETF,Internet Engineering Task Force,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 IGP,Interior Gateway Protocol,"exchanges routing information within a single autonomous system (AS), for example: OSPF",https://support.huawei.com/enterprise/en/doc/EDOC1100086956,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 IIS,Internet Information Services,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
@@ -171,10 +171,10 @@ LUKS,Linux Unified Key Setup ,The Linux Unified Key Setup (LUKS) is a disk encry
 MAC,Mandatory Access Control ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 MAC,Media Access Control,Network interface MAC address,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 MAC,Message Authentication Code,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
-MAM,Mobile Application Management, (MAM) to control corporate-owned software;,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+MAM,Mobile Application Management,(MAM) to control corporate-owned software,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 MAMP,"macOS, Apache, MySQL, PHP",,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 MCU,Microcontroller Unit,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
-MDM,Mobile Device Management ,MDM to manage corporate-owned devices;,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+MDM,Mobile Device Management ,MDM to manage corporate-owned devices,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 MEAN,"MongoDB, Express.js, AngularJS(or Angular), and Node.js ",,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 MFA,Multifactor Authentication,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 MIB,Management Information Base,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
@@ -205,7 +205,7 @@ OASIS,Organization for the Advancement of Structured Information Standards,,,202
 OCSP,Online Certificate Status Protocol,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 ODM,Original Design Manufacturing,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 OEM,Original Equipment Manufacturer,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
-OMB, Office of Management and Budget,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+OMB,Office of Management and Budget,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 OPC,Open Compute Project,,https://www.opencompute.org/,2023-01-19T14:35:00Z,GW,2023-01-19T14:35:00Z,GW
 OPEX,Operaional Expenditure,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 OS,Operating System,"An operating system (OS) is system software that manages computer hardware and software resources, and provides common services for computer programs.",https://en.wikipedia.org/wiki/Operating_system,2023-03-09T09:35:00Z,GW,2023-03-09T09:35:00Z,GW
@@ -215,8 +215,8 @@ OSSEC,Open Source HIDS SECurity ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,
 OT,Operational Technology,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 OWASP,Open Web Application Security Project,,https://owasp.org,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 PAAS,Platform as a Service,"Platform as a service (PaaS) or application platform as a service (aPaaS) or platform-based service is a category of cloud computing services that allows customers to provision, instantiate, run, and manage a modular bundle comprising a computing platform and one or more applications, ",https://en.wikipedia.org/wiki/Platform_as_a_service,2022-12-15T11:41:25Z,GW,2023-01-19T14:35:00Z,GW
-PABP, Payment Application Best Practices,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
-PACS, Physical Access Control System,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+PABP,Payment Application Best Practices,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+PACS,Physical Access Control System,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 PAM,Plugable Authentication Modules,,https://en.wikipedia.org/wiki/Pluggable_authentication_module,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 PAM,Privileged Access Management,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 PAN,Personal Area Network,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
@@ -337,8 +337,8 @@ WSA,Cisco Web Security Appliance ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z
 WSTG,Web Security Testing Guide,,https://owasp.org/www-project-web-security-testing-guide/,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 WSUS,Windows Server Update Services,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 WWW,Word Wide Web,"The World Wide Web (WWW), commonly known as the Web, is an information system enabling documents and other web resources to be accessed over the Internet ",https://en.wikipedia.org/wiki/World_Wide_Web,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
-X509,In cryptography,X.509,X.509 is an International Telecommunication Union (ITU) standard defining the format of public key certificates. X.509 certificates are used in many Internet protocols, including TLS/SSL, which is the basis for HTTPS, the secure protocol for browsing the web. They are also used in offline applications, like electronic signatures.,https://en.wikipedia.org/wiki/X.509,2023-03-20T12:07:00Z,GW,2023-03-20T12:07:00Z,GW
-X.509,In cryptography,X.509,X.509 is an International Telecommunication Union (ITU) standard defining the format of public key certificates. X.509 certificates are used in many Internet protocols, including TLS/SSL, which is the basis for HTTPS, the secure protocol for browsing the web. They are also used in offline applications, like electronic signatures.,https://en.wikipedia.org/wiki/X.509,2023-03-20T12:07:00Z,GW,2023-03-20T12:07:00Z,GW
+X509,In cryptography,X.509 is an International Telecommunication Union (ITU) standard defining the format of public key certificates. X.509 certificates are used in many Internet protocols,,2023-01-23T09:27:00Z,GW,2023-01-23T09:27:00Z,GW
+X.509,In cryptography,X.509 is an International Telecommunication Union (ITU) standard defining the format of public key certificates. X.509 certificates are used in many Internet protocols,,2023-01-23T09:27:00Z,GW,2023-01-23T09:27:00Z,GW
 XFS,Linux file system,"Good industry standard. Good performance when dealing with large files, but has worse performance when dealing with many small files",,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 YUM,Yellow Dog Updater,"Just as APT is a more advanced front-end for dpkg, YUM (Yellow Dog Updater) is the most popular choice as front-end for RPM, the basic package management software for RHEL operating systems.",,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 ZFS,"Z File System, Linux file system","Good industry standard. Good performance when dealing with large files, but has worse performance when dealing with many small files",,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
