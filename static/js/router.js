@@ -1,10 +1,10 @@
 // 2023-03-18 Glenn Wadstedt, updated 2023-03-31
-import { initAcronyms } from "./acronyms.js"
-import { initTBD } from "./tbd.js"; 
+import { initAcronyms } from "./acronyms_mvc.js"
+import { initSpellingAlphabet } from "./spelling_alphabet_mvc.js"; 
 
 const ROUTES = {
     "Acronyms": 0,
-    "TBD": 1
+    "SpellingAlphabet": 1
 };
 
 const route = (document, newRoute) => {    
@@ -13,8 +13,8 @@ const route = (document, newRoute) => {
     if (newRoute == ROUTES.Acronyms) {
         initAcronyms(document);
     }
-    else if (newRoute == ROUTES.TBD) {
-        initTBD(document);
+    else if (newRoute == ROUTES.SpellingAlphabet) {
+        initSpellingAlphabet(document);
     }
 }
 
@@ -22,8 +22,8 @@ const initEventhandlers = (document) => {
     document.getElementById("acronymsId").addEventListener("click", () => {        
         route(document, ROUTES.Acronyms);
     })
-    document.getElementById("TBDId").addEventListener("click", () => {        
-        route(document, ROUTES.TBD);
+    document.getElementById("spellingAlphabetId").addEventListener("click", () => {        
+        route(document, ROUTES.SpellingAlphabet);
     })
 }
 
