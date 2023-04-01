@@ -1,13 +1,13 @@
-// 2023-04-01 Glenn Wadstedt, updated 2023-04-01
+import { initClock } from "./clock_mvc.js"
 
 const addContent = (document) => {
   var text = document.getElementById("centerId").innerHTML;  
   text += '<div class="jumbotron jumbotron-fluid">';        
   text += '  <div class="container">';
-  text += '    <h1 class="display-4">Lorem ipsum</h1>';
-  text += '      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>'
+  text += '    <h1 class="display-4">Time....</h1>';
+  text += '      <p class="lead">text text</p>'
   text += '      <hr class="my-4">';
-  text += '      <p>4010c34b1e43536837967815d19b9153af3394ea780fbc74ddf2e48086041be6</p>'
+  text += '      <div id="clockId"></div>'
   text += '    </div>';
   text += '  </div>';
   text += '</div>';  
@@ -22,7 +22,8 @@ const setupEventListener = (document) => {
   // TODO 
 }
 
-export function initIndex(document) {  
+export function initTime(document) {  
   setupView(document);
-  setupEventListener(document);  
+  setupEventListener(document);
+  initClock(window, "#clockId");    
 }

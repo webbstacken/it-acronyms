@@ -1,5 +1,3 @@
-// 2023-03-19 Glenn Wadstedt, updated 2023-03-19
-
 const updateClock = (clockId) => {    
   var clockHandle = document.querySelector(clockId)   
   if (clockHandle) {

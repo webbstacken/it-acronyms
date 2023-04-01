@@ -4,42 +4,43 @@
 <head>
     <meta charset="utf-8">    
     <meta name="author" content="Glenn Wadstedt">
-    <meta name="description" content="Yet another IT acronyms page...">
+    <meta name="description" content="Yet another pet project page...">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="./static/images/favicon.ico">
     <link rel="stylesheet" href="./static/css/bootstrap.min.css">
-    <title>Playground</title>
+    <title>Pet project</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" id="indexsId" href="#">Playground</a>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <nav class="navbar navbar-light bg-light navbar-expand-md">
+        <a href="#" class="navbar-brand">Pet project</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbar">
             <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" id="acronymsId">| Acronyms |</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="spellingAlphabetId">Spelling Alphabet |</a>
-                </li>
+                <li class="nav-item"><a href="#" class="nav-link" id="homeId">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" id="knowledgeBaseId">Knowledge base</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" id="snakeId">Snake</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" id="spellingAlphabetId">Spelling Alphabet</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" id="timeId">Time</a></li>
             </ul>
         </div>
-        <div class="text-muted" id="clockId"></div>
     </nav>
-
+        
     <div id="centerId"></div>
 
     <div class="row">
         <footer class="footer bg-light fixed-bottom">
-            <p class="col-md-12 mb-0 text-muted">v1.0.0.11 last updated 2023-04-01 08:32:00 UTC</p>
+            <p class="col-md-12 mb-0 text-muted">v1.0.0.12 2023-04-01 18:32:00 UTC</p>
         </footer>
     </div>
     
     <script src="./static/js/lib/bootstrap.min.js"></script>
     <script src="./static/js/lib/d3.v7.min.js"></script>    
-    <script src="./static/js/acronym_dictionary.js"></script>
+    <script src="./static/js/knowledge_base_dictionary.js"></script>
     <script src="./static/js/spelling_alphabets_dictionary.js"></script>
-    <script src="./static/js/spelling_alphabet_mvc.js"></script>    
+    <!-- <script type="module" src="./static/js/spelling_alphabet_mvc.js"></script>     -->
     <script type="module" src="./static/js/main.js"></script>
 </body>
 

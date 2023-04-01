@@ -1,6 +1,4 @@
-// 2023-03-21 Glenn Wadstedt, updated 2023-03-21
-
-class AcronymDictionary{        
+class KnowledgeBaseDictionary{        
     #dictionary = {};
 
     constructor(filePath){

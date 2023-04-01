@@ -1,23 +1,5 @@
-// 2023-03-19 Glenn Wadstedt, updated 2023-03-20
 const spellingAlphabetDictionary = new SpellingAlphabetDictionary("./static/data/spelling_alphabets.json");  
 var currentlang_ISO639_1 = "en";
-
-function radioButtonChanged(event) {
-    const language = event.target.value;
-    if (language === dictionaryLanguage) {
-      return;
-    }
-    // look up new dictionary
-    const dictionary = dictionaries.find((dictionary) => dictionary.lang_ISO639_1 === language);
-    currentlang_ISO639_1 = dictionary.lang_ISO639_1;
-    
-    // clean up...
-    // setCodeWords("");
-    // inputRef.current.focus();
-  };
-function getValue(radio) {
-        alert(radio.value);
-}
 
 const addRadioButtons = (document) => {  
   var dictionaries = spellingAlphabetDictionary.getDictionaries();
@@ -28,8 +10,7 @@ const addRadioButtons = (document) => {
     text = (document.getElementById("centerId").innerHTML = text);
 
     dictionaries.map((dictionary) => {
-        const { alphabeth, lang_ISO639_1 } = dictionary;        
-        //https://stackoverflow.com/questions/49097300/add-event-listener-for-click-change-on-bootstrap-radio-buttons
+        const { alphabeth, lang_ISO639_1 } = dictionary;                
         text += '<input type="radio" class="btn-check" name="options" id="radioId' + lang_ISO639_1 + '" ' + (lang_ISO639_1 == currentlang_ISO639_1 ? "checked": "") + ' value="' + lang_ISO639_1 + '" ' + '>';
         text += '<label class="btn btn-outline-secondary" for="radioId' + lang_ISO639_1 + '">' + alphabeth + '</label>';      
 

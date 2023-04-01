@@ -1,7 +1,6 @@
-// 2023-03-18 Glenn Wadstedt, updated 2023-03-20
-const acronymDictionary = new AcronymDictionary("./static/data/acronyms.csv");    
+const knowledgeBaseDictionary = new KnowledgeBaseDictionary("./static/data/acronyms.csv");    
 
-const addAcronymSearchField = (document) => {
+const addKnowledgeBaseSearchField = (document) => {
   var text = "";
   text  = '<div style="margin-top:20px;" class="container">';        
   text += '  <div class="row">';
@@ -57,7 +56,7 @@ const addResultCards = (document, acronymArray) => {
 }
 
 const setupView = (document) => {
-  addAcronymSearchField(document);
+  addKnowledgeBaseSearchField(document);
 }
 
 const setupEventListener = (document) => {  
@@ -66,13 +65,13 @@ const setupEventListener = (document) => {
     
     var query = document.getElementById("searchInput").value.toUpperCase();
     if (query !== "") {
-      var acronyms = acronymDictionary.getItems(query);
+      var acronyms = knowledgeBaseDictionary.getItems(query);
       addCards(document, acronyms);
     }
   })
 };
 
-export function initAcronyms(document) {  
+export function initKnowledgeBase(document) {  
   setupView(document);
   setupEventListener(document);
 }

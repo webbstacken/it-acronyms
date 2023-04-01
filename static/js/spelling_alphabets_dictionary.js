@@ -1,5 +1,3 @@
-// Glenn Wadstedt, updated 2023-04-21
-
 class SpellingAlphabetDictionary{        
     #dictionarys = [];
 
