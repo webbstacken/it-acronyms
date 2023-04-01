@@ -1,4 +1,4 @@
-// 2023-03-21 Glenn Wadstedt, updated 2023-03-21
+// Glenn Wadstedt, updated 2023-04-21
 
 class SpellingAlphabetDictionary{        
     #dictionarys = [];
@@ -19,13 +19,14 @@ class SpellingAlphabetDictionary{
         })
     }
 
-    getCodeWords(inputText){    
-        var dictionary = this.#dictionarys[0];
+    getCodeWords(textToParse, lang_ISO639_1){    
+        const dictionary = this.#dictionarys.find((dictionary) => dictionary.lang_ISO639_1 === lang_ISO639_1);       
 
-        // loop through the input char by char and collect corresponding code words
+        // loop through textToParse char by char and collect corresponding code words
         let textBuffer = "";
-        Array.from(inputText).forEach((char, index) => {
+        Array.from(textToParse).forEach((char, index) => {
             const dictionaryEntry = dictionary.dictionary.filter((x) => x.symbol === char);
+
             if (dictionaryEntry && dictionaryEntry.length > 0) {
                 textBuffer = textBuffer + dictionaryEntry[0].code_word + " ";
             } 

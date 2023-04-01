@@ -15,19 +15,22 @@ function radioButtonChanged(event) {
     // setCodeWords("");
     // inputRef.current.focus();
   };
+function getValue(radio) {
+        alert(radio.value);
+}
 
 const addRadioButtons = (document) => {  
   var dictionaries = spellingAlphabetDictionary.getDictionaries();
   if (dictionaries) {
     var text = '<div style="margin-top:20px;" class="container">';
     text    += '  <div class="row">';
-    text    += '    <div class="col-12" id="radioButtonsId>';      
+    text    += '    <div class="col-12" id="radioButtonsId">';      
     text = (document.getElementById("centerId").innerHTML = text);
 
     dictionaries.map((dictionary) => {
         const { alphabeth, lang_ISO639_1 } = dictionary;        
         //https://stackoverflow.com/questions/49097300/add-event-listener-for-click-change-on-bootstrap-radio-buttons
-        text += '<input type="radio" class="btn-check" name="options" id="radioId' + lang_ISO639_1 + '" ' + 'autocomplete="off" ' + (lang_ISO639_1 == currentlang_ISO639_1 ? "checked": "") + '>';
+        text += '<input type="radio" class="btn-check" name="options" id="radioId' + lang_ISO639_1 + '" ' + (lang_ISO639_1 == currentlang_ISO639_1 ? "checked": "") + ' value="' + lang_ISO639_1 + '" ' + '>';
         text += '<label class="btn btn-outline-secondary" for="radioId' + lang_ISO639_1 + '">' + alphabeth + '</label>';      
 
         text = (document.getElementById("centerId").innerHTML = text);
@@ -85,10 +88,25 @@ const setupEventListener = (document) => {
     
     var query = document.getElementById("searchInput").value.toUpperCase();
     if (query !== "") {
-      var codeWordsInfo = spellingAlphabetDictionary.getCodeWords(query);
+      var codeWordsInfo = spellingAlphabetDictionary.getCodeWords(query, currentlang_ISO639_1);
       addResults(document, codeWordsInfo);      
     }
-  })
+  });
+  // https://stackoverflow.com/questions/58606047/how-to-use-on-addeventlistener-on-radio-button-in-plain-javascript
+  document.querySelectorAll('input[name="options"]').forEach((elem) => {
+    elem.addEventListener("change", function(event) {
+      var language = event.target.value;      
+      
+      if (language === currentlang_ISO639_1) 
+        return;
+
+      currentlang_ISO639_1 = language;     
+      document.getElementById("searchInput");     
+      
+      // tutorialspoint.com/how-can-i-trigger-an-onchange-event-manually-in-javascript
+      document.querySelector('#searchInput').dispatchEvent(new Event("input"))      
+    });
+  });
 }
 
 export function initSpellingAlphabet(document) {  
