@@ -1,4 +1,3 @@
-const version = "2023.4.2.1"
 
 const addContent = (document) => {
   var text = document.getElementById("centerId").innerHTML;  
