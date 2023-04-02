@@ -1090,148 +1090,148 @@
     "dictionary": [
       {
         "symbol": "A",
-        "code_word": ". ___\t"
+        "code_word": ". ___"
       },
       {
         "symbol": "B",
-        "code_word": "___ . . .\t"
+        "code_word": "___ . . ."
       },
       {
         "symbol": "C",
-        "code_word": "___ . ___ .\t"
+        "code_word": "___ . ___ ."
       },
       {
         "symbol": "D",
-        "code_word": "___ . .\t"
+        "code_word": "___ . ."
       },
       {
         "symbol": "E",
-        "code_word": ".\t"
+        "code_word": "."
       },
       {
         "symbol": "F",
-        "code_word": ". . ___ .\t"
+        "code_word": ". . ___ ."
       },
       {
         "symbol": "G",
-        "code_word": "___ ___ .\t"
+        "code_word": "___ ___ ."
       },
       {
         "symbol": "H",
-        "code_word": ". . . .\t"
+        "code_word": ". . . ."
       },
       {
         "symbol": "I",
-        "code_word": ". .\t"
+        "code_word": ". ."
       },
       {
         "symbol": "J",
-        "code_word": ". ___ ___ ___\t"
+        "code_word": ". ___ ___ ___"
       },
       {
         "symbol": "K",
-        "code_word": ". ___ ___ ___\t"
+        "code_word": ". ___ ___ ___"
       },
       {
         "symbol": "L",
-        "code_word": ". ___ . .\t"
+        "code_word": ". ___ . ."
       },
       {
         "symbol": "M",
-        "code_word": "___ ___\t"
+        "code_word": "___ ___"
       },
       {
         "symbol": "N",
-        "code_word": "___ .\t"
+        "code_word": "___ ."
       },
       {
         "symbol": "O",
-        "code_word": "___ ___ ___\t"
+        "code_word": "___ ___ ___"
       },
       {
         "symbol": "P",
-        "code_word": ". ___ ___ .\t"
+        "code_word": ". ___ ___ ."
       },
       {
         "symbol": "Q",
-        "code_word": "___ ___ . ___\t"
+        "code_word": "___ ___ . ___"
       },
       {
         "symbol": "R",
-        "code_word": ". ___ .\t"
+        "code_word": ". ___ ."
       },
       {
         "symbol": "S",
-        "code_word": ". . .\t"
+        "code_word": ". . ."
       },
       {
         "symbol": "T",
-        "code_word": "___\t"
+        "code_word": "___"
       },
       {
         "symbol": "U",
-        "code_word": ". . ___\t"
+        "code_word": ". . ___"
       },
 
       {
         "symbol": "V",
-        "code_word": ". . . ___\t"
+        "code_word": ". . . ___"
       },
       {
         "symbol": "W",
-        "code_word": ". ___ ___\t"
+        "code_word": ". ___ ___"
       },
       {
         "symbol": "X",
-        "code_word": "___ . . ___\t"
+        "code_word": "___ . . ___"
       },
       {
         "symbol": "Y",
-        "code_word": "___ . ___ ___\t"
+        "code_word": "___ . ___ ___"
       },
       {
         "symbol": "Z",
-        "code_word": "___ ___ . .\t"
+        "code_word": "___ ___ . ."
       },
       {
         "symbol": "1",
-        "code_word": ". ___ ___ ___ ___\t"
+        "code_word": ". ___ ___ ___ ___"
       },
       {
         "symbol": "2",
-        "code_word": ". . ___ ___ ___\t"
+        "code_word": ". . ___ ___ ___"
       },
       {
         "symbol": "3",
-        "code_word": ". . . ___ ___\t"
+        "code_word": ". . . ___ ___"
       },
       {
         "symbol": "4",
-        "code_word": ". . . . ___\t"
+        "code_word": ". . . . ___"
       },
       {
         "symbol": "5",
-        "code_word": ". . . . .\t"
+        "code_word": ". . . . ."
       },
       {
         "symbol": "6",
-        "code_word": "___ . . . .\t"
+        "code_word": "___ . . . ."
       },
       {
         "symbol": "7",
-        "code_word": "___ ___ . . .\t"
+        "code_word": "___ ___ . . ."
       },
       {
         "symbol": "8",
-        "code_word": "___ ___ ___ . .\t"
+        "code_word": "___ ___ ___ . ."
       },
       {
         "symbol": "9",
-        "code_word": "___ ___ ___ ___ .\t"
+        "code_word": "___ ___ ___ ___ ."
       },
       {
         "symbol": "0",
-        "code_word": "___ ___ ___ ___ ___\t"
+        "code_word": "___ ___ ___ ___ ___"
       }
     ]
   }
