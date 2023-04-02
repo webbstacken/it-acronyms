@@ -1,15 +1,24 @@
 const addContent = (document) => {
   var text = document.getElementById("centerId").innerHTML;  
-  text += '<div class="jumbotron jumbotron-fluid">';        
-  text += '  <div class="container">';
-  text += '    <h1 class="display-4">Snake</h1>';
-  text += '      <p class="lead">Weekend project 2023-04-01 - 2023-04-02</p>'
-  text += '      <hr class="my-4">';
-  text += '      <p>In progress...</p>'
+  
+  //text += '<div class="container">';
+  text += '  <div class="row align-items-start">';
+  text += '    <div class="col .col-md-1">';
+  text += '      <button type="button" class="btn btn-success">Success</button>';
+  text += '    </div>';
+  text += '    <div class="col .col-md-10">';
+  text += '      <canvas id="canvas"></canvas>';
+  text += '    </div>';
+  text += '    <div class="col .col-md-1">';
+  text += '      <button type="button" class="btn btn-danger">Danger</button>';  
   text += '    </div>';
   text += '  </div>';
-  text += '</div>';  
-  document.getElementById("centerId").innerHTML = text;
+  //text += '</div>';
+  
+  text = (document.getElementById("centerId").innerHTML = text);
+  // var canvas = document.getElementById("canvas"); 
+  // canvas.width  = window.innerWidth;
+  // canvas.height = window.innerHeight;
 }
 
 const setupView = (document) => {
