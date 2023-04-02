@@ -1,4 +1,4 @@
-var version=""$major.$minor.$build""
+var version="$major.$minor.$build"
 var version="1.0.0";
 
 const addContent = (document) => {
