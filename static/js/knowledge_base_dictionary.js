@@ -6,8 +6,8 @@ class KnowledgeBaseDictionary{
     }
 
     #initDictionary = async (filePath) => {
-        var self = this;
-        var tempItems = [];           
+        let self = this;
+        let tempItems = [];           
         await d3.csv(filePath).then(function(data) {
             tempItems = data;
         });
@@ -24,7 +24,7 @@ class KnowledgeBaseDictionary{
 
     #getItem(query) {
         try {
-            var item = this.#dictionary[query.toUpperCase()];
+            let item = this.#dictionary[query.toUpperCase()];
             return this.#dictionary[query.toUpperCase()];
         } catch(e) {
             return undefined;
@@ -32,7 +32,7 @@ class KnowledgeBaseDictionary{
     }
 
     getItems(query) {
-        var acronyms = [];
+        let acronyms = [];
         try {            
             for (const acronym in this.#dictionary) {    
                 if (acronym.startsWith(query)){

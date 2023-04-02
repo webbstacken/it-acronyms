@@ -6,8 +6,8 @@ class SpellingAlphabetDictionary{
     }
 
     #initDictionary = async (filePath) => {
-        var self = this;
-        var tempItems = [];           
+        let self = this;
+        let tempItems = [];           
         await d3.json(filePath).then(function(data) {
             tempItems = data;
         });
@@ -26,7 +26,9 @@ class SpellingAlphabetDictionary{
             const dictionaryEntry = dictionary.dictionary.filter((x) => x.symbol === char);
 
             if (dictionaryEntry && dictionaryEntry.length > 0) {
-                textBuffer = textBuffer + dictionaryEntry[0].code_word + " ";
+                let codeWord = dictionaryEntry[0].code_word;
+                let spacesToAdd = codeWord.startsWith('.') || codeWord.startsWith('_') ? "&nbsp&nbsp&nbsp": "&nbsp";
+                textBuffer = textBuffer + codeWord + spacesToAdd;
             } 
             else {
                 textBuffer = textBuffer + "? ";

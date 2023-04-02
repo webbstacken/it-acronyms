@@ -1081,5 +1081,158 @@
         "code_word": "Äiti"
       }
     ]
+  },
+  {
+    "lang_ISO639_1": "-",
+    "alphabeth": "International Morse Code",
+    "source": "https://en.wikipedia.org/wiki/Morse_code#/media/File:International_Morse_Code.svg",
+    "placeholderttext": "...",
+    "dictionary": [
+      {
+        "symbol": "A",
+        "code_word": ". ___\t"
+      },
+      {
+        "symbol": "B",
+        "code_word": "___ . . .\t"
+      },
+      {
+        "symbol": "C",
+        "code_word": "___ . ___ .\t"
+      },
+      {
+        "symbol": "D",
+        "code_word": "___ . .\t"
+      },
+      {
+        "symbol": "E",
+        "code_word": ".\t"
+      },
+      {
+        "symbol": "F",
+        "code_word": ". . ___ .\t"
+      },
+      {
+        "symbol": "G",
+        "code_word": "___ ___ .\t"
+      },
+      {
+        "symbol": "H",
+        "code_word": ". . . .\t"
+      },
+      {
+        "symbol": "I",
+        "code_word": ". .\t"
+      },
+      {
+        "symbol": "J",
+        "code_word": ". ___ ___ ___\t"
+      },
+      {
+        "symbol": "K",
+        "code_word": ". ___ ___ ___\t"
+      },
+      {
+        "symbol": "L",
+        "code_word": ". ___ . .\t"
+      },
+      {
+        "symbol": "M",
+        "code_word": "___ ___\t"
+      },
+      {
+        "symbol": "N",
+        "code_word": "___ .\t"
+      },
+      {
+        "symbol": "O",
+        "code_word": "___ ___ ___\t"
+      },
+      {
+        "symbol": "P",
+        "code_word": ". ___ ___ .\t"
+      },
+      {
+        "symbol": "Q",
+        "code_word": "___ ___ . ___\t"
+      },
+      {
+        "symbol": "R",
+        "code_word": ". ___ .\t"
+      },
+      {
+        "symbol": "S",
+        "code_word": ". . .\t"
+      },
+      {
+        "symbol": "T",
+        "code_word": "___\t"
+      },
+      {
+        "symbol": "U",
+        "code_word": ". . ___\t"
+      },
+
+      {
+        "symbol": "V",
+        "code_word": ". . . ___\t"
+      },
+      {
+        "symbol": "W",
+        "code_word": ". ___ ___\t"
+      },
+      {
+        "symbol": "X",
+        "code_word": "___ . . ___\t"
+      },
+      {
+        "symbol": "Y",
+        "code_word": "___ . ___ ___\t"
+      },
+      {
+        "symbol": "Z",
+        "code_word": "___ ___ . .\t"
+      },
+      {
+        "symbol": "1",
+        "code_word": ". ___ ___ ___ ___\t"
+      },
+      {
+        "symbol": "2",
+        "code_word": ". . ___ ___ ___\t"
+      },
+      {
+        "symbol": "3",
+        "code_word": ". . . ___ ___\t"
+      },
+      {
+        "symbol": "4",
+        "code_word": ". . . . ___\t"
+      },
+      {
+        "symbol": "5",
+        "code_word": ". . . . .\t"
+      },
+      {
+        "symbol": "6",
+        "code_word": "___ . . . .\t"
+      },
+      {
+        "symbol": "7",
+        "code_word": "___ ___ . . .\t"
+      },
+      {
+        "symbol": "8",
+        "code_word": "___ ___ ___ . .\t"
+      },
+      {
+        "symbol": "9",
+        "code_word": "___ ___ ___ ___ .\t"
+      },
+      {
+        "symbol": "0",
+        "code_word": "___ ___ ___ ___ ___\t"
+      }
+    ]
   }
 ]
