@@ -1,3 +1,4 @@
+import { initAbout } from "./about_mvc.js";      
 import { initHome } from "./home_mvc.js";      
 import { initKnowledgeBase } from "./knowledge_base_mvc.js";
 import { initSnake } from "./snake_mvc.js";   
@@ -5,17 +6,22 @@ import { initSpellingAlphabet } from "./spelling_alphabet_mvc.js";
 import { initTime } from "./time_mvc.js"; 
 
 const ROUTES = {
-    "KnowledgeBase": 0,
-    "Home": 1,
-    "Snake": 2,
-    "SpellingAlphabet": 3,
-    "Time": 4
+    "About": 0,
+    "KnowledgeBase": 1,
+    "Home": 2,
+    "Snake": 3,
+    "SpellingAlphabet": 4,
+    "Time": 5
 };
 
 const route = (document, newRoute) => {    
     document.getElementById("centerId").innerHTML = "";    
 
-    if (newRoute == ROUTES.Home) {
+    
+    if (newRoute == ROUTES.About) {
+        initAbout(document);
+    }
+    else if (newRoute == ROUTES.Home) {
         initHome(document);
     }
     else if (newRoute == ROUTES.KnowledgeBase) {
@@ -34,6 +40,10 @@ const route = (document, newRoute) => {
 }
 
 const initEventhandlers = (document) => {
+    document.getElementById("aboutId").addEventListener("click", (event) => {                
+        route(document, ROUTES.About);
+    });
+
     document.getElementById("homeId").addEventListener("click", (event) => {                
         route(document, ROUTES.Home);
     });
