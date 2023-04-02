@@ -62,8 +62,9 @@ const setupView = (document) => {
 const setupEventListener = (document) => {  
   document.getElementById("searchInput").addEventListener("input", function(event) {    
     document.getElementById("cardContent").innerHTML = ""; 
-    
-    var query = document.getElementById("searchInput").value.toUpperCase();
+
+    var handle = document.getElementById("searchInput");
+    var query = handle.value.toUpperCase();
     if (query !== "") {
       var acronyms = knowledgeBaseDictionary.getItems(query);
       addCards(document, acronyms);

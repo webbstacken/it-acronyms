@@ -67,12 +67,15 @@ const setupEventListener = (document) => {
   document.getElementById("searchInput").addEventListener("input", function(event) {    
     document.getElementById("codeWordsId").innerHTML = ""; 
     
-    var query = document.getElementById("searchInput").value.toUpperCase();
+    var handle = document.getElementById("searchInput");
+    var query = handle.value.toUpperCase();
     if (query !== "") {
       var codeWordsInfo = spellingAlphabetDictionary.getCodeWords(query, currentlang_ISO639_1);
       addResults(document, codeWordsInfo);      
     }
-  });
+    handle.focus();
+  }) 
+   
   // https://stackoverflow.com/questions/58606047/how-to-use-on-addeventlistener-on-radio-button-in-plain-javascript
   document.querySelectorAll('input[name="options"]').forEach((elem) => {
     elem.addEventListener("change", function(event) {

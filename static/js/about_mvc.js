@@ -23,7 +23,7 @@ const addContent = async (document) => {
   text += '<div class="jumbotron jumbotron-fluid">';        
   text += '  <div class="container">';
   text += '    <h1 class="display-4">About...</h1>';
-  text += '      <p class="lead">Version (major.minor.epoc): ' + version +'</p>'
+  text += '      <p class="lead">Version: ' + version +  ' [major.minor.epoc]</p>'
   text += '      <hr class="my-4">';
   text += '      <p class="lead">text text</p>'
   text += '    </div>';
