@@ -6,66 +6,39 @@ import { initSpellingAlphabet } from "./spelling_alphabet_mvc.js";
 import { initTime } from "./time_mvc.js"; 
 
 const ROUTES = {
-    "About": 0,
-    "KnowledgeBase": 1,
-    "Home": 2,
-    "Snake": 3,
-    "SpellingAlphabet": 4,
-    "Time": 5
+    "ABOUT": 0,
+    "KNOWLEDGE_BASE": 1,
+    "HOME": 2,
+    "SNAKE": 3,
+    "SPELLING_ALPHABETH": 4,
+    "TIME": 5
 };
 
 const route = (document, newRoute) => {    
-    document.getElementById("centerId").innerHTML = "";    
-
+    document.getElementById("centerId").innerHTML = "";
     
-    if (newRoute == ROUTES.About) {
-        initAbout(document);
-    }
-    else if (newRoute == ROUTES.Home) {
-        initHome(document);
-    }
-    else if (newRoute == ROUTES.KnowledgeBase) {
-        initKnowledgeBase(document);
-    }
-    
-    else if (newRoute == ROUTES.Snake) {
-        initSnake(document);
-    }
-    else if (newRoute == ROUTES.SpellingAlphabet) {
-        initSpellingAlphabet(document);
-    }
-    else if (newRoute == ROUTES.Time) {
-        initTime(document);
+    switch (newRoute) {
+        case ROUTES.ABOUT: initAbout(document); break;
+        case ROUTES.HOME: initHome(document); break;
+        case ROUTES.KNOWLEDGE_BASE: initKnowledgeBase(document); break;
+        case ROUTES.SNAKE: initSnake(document); break;
+        case ROUTES.SPELLING_ALPHABETH: initSpellingAlphabet(document); break;
+        case ROUTES.TIME: initTime(document); break;
+        default: console.log("Unknown route: '" + newRoute + "'"); 
     }
 }
 
 const initEventhandlers = (document) => {
-    document.getElementById("aboutId").addEventListener("click", (event) => {                
-        route(document, ROUTES.About);
-    });
-
-    document.getElementById("homeId").addEventListener("click", (event) => {                
-        route(document, ROUTES.Home);
-    });
-
-    document.getElementById("knowledgeBaseId").addEventListener("click", (event) => {                
-        route(document, ROUTES.KnowledgeBase);
-    });
-
-    document.getElementById("snakeId").addEventListener("click", (event) => {                
-        route(document, ROUTES.Snake);
-    });
-
-    document.getElementById("spellingAlphabetId").addEventListener("click", (event) => {                
-        route(document, ROUTES.SpellingAlphabet);
-    });
-    
-    document.getElementById("timeId").addEventListener("click", (event) => {                
-        route(document, ROUTES.Time);
-    });
+    for (const key in ROUTES) {
+        let id = key+ "_ID";
+        let newRoute = ROUTES[key];
+        document.getElementById(id).addEventListener("click", (event) => {                
+            route(document, newRoute);
+        });
+    }
 }
 
 export function initRouter(document ) {          
-    route(document, ROUTES.Index );    
+    route(document, ROUTES.HOME );    
     initEventhandlers(document);    
 }
