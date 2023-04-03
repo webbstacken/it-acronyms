@@ -21,7 +21,7 @@ const route = (document, newRoute) => {
         case ROUTES.ABOUT: initAbout(document); break;
         case ROUTES.HOME: initHome(document); break;
         case ROUTES.KNOWLEDGE_BASE: initKnowledgeBase(document); break;
-        case ROUTES.SNAKE: initSnake(document); break;
+        case ROUTES.SNAKE: initSnake(window, document); break;
         case ROUTES.SPELLING_ALPHABETH: initSpellingAlphabet(document); break;
         case ROUTES.TIME: initTime(document); break;
         default: console.log("Unknown route: '" + newRoute + "'"); 
@@ -39,6 +39,6 @@ const initEventhandlers = (document) => {
 }
 
 export function initRouter(document ) {          
-    route(document, ROUTES.HOME );    
+    route(document, ROUTES.SNAKE );    
     initEventhandlers(document);    
 }

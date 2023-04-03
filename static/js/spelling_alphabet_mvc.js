@@ -1,4 +1,5 @@
 const spellingAlphabetDictionary = new SpellingAlphabetDictionary("./static/data/spelling_alphabets.json");  
+
 let currentlang_ISO639_1 = "en";
 
 const addRadioButtons = (document) => {  
