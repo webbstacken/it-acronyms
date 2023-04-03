@@ -1,5 +1,5 @@
 const addContent = (document) => {
-  var text = document.getElementById("centerId").innerHTML;  
+  let text = document.getElementById("centerId").innerHTML;  
   
   //text += '<div class="container">';
   text += '  <div class="row align-items-start">';
@@ -16,9 +16,6 @@ const addContent = (document) => {
   //text += '</div>';
   
   text = (document.getElementById("centerId").innerHTML = text);
-  // var canvas = document.getElementById("canvas"); 
-  // canvas.width  = window.innerWidth;
-  // canvas.height = window.innerHeight;
 }
 
 const setupView = (document) => {

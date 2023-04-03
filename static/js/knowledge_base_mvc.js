@@ -1,7 +1,7 @@
 const knowledgeBaseDictionary = new KnowledgeBaseDictionary("./static/data/acronyms.csv");    
 
 const addKnowledgeBaseSearchField = (document) => {
-  var text = "";
+  let text = "";
   text  = '<div style="margin-top:20px;" class="container">';        
   text += '  <div class="row">';
   text += '    <div class="col-12">';
@@ -31,8 +31,8 @@ const addResultCards = (document, acronymArray) => {
   try {  
         acronymArray.forEach((row) => {      
           row.forEach((element) => {         
-            var data = JSON.parse(element);
-            var text = "";
+            const data = JSON.parse(element);
+            let text = "";
             text  = '<div class="card" style="width: 100%; margin-top:5px;">';
             text += '  <div class="card-body">';
             text += '    <h5 class="card-title"">' + data["Acronym"] +' </h5>';
@@ -63,10 +63,10 @@ const setupEventListener = (document) => {
   document.getElementById("searchInput").addEventListener("input", function(event) {    
     document.getElementById("cardContent").innerHTML = ""; 
 
-    var handle = document.getElementById("searchInput");
-    var query = handle.value.toUpperCase();
+    const handle = document.getElementById("searchInput");
+    const query = handle.value.toUpperCase();
     if (query !== "") {
-      var acronyms = knowledgeBaseDictionary.getItems(query);
+      const acronyms = knowledgeBaseDictionary.getItems(query);
       addCards(document, acronyms);
     }
   })

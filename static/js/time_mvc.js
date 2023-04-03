@@ -1,28 +1,28 @@
 const updateClock = (clockId) => {    
-  var clockHandle = document.querySelector(clockId)   
+  const clockHandle = document.querySelector(clockId)   
   if (clockHandle) {
-    var date = new Date()  
+    const date = new Date()  
     clockHandle.innerText = getUtcDaytime(date) + "\n " + getLocaleDaytime(date);
   }
 }
 
 const getUtcDaytime = (date) => {    
-  var y = date.getUTCFullYear();
-  var M = formatNumber(date.getUTCMonth() + 1);
-  var D = formatNumber(date.getUTCDate());
-  var h = formatNumber(date.getUTCHours());
-  var m = formatNumber(date.getUTCMinutes());
-  var s = formatNumber(date.getUTCSeconds());
+  const y = date.getUTCFullYear();
+  const M = formatNumber(date.getUTCMonth() + 1);
+  const D = formatNumber(date.getUTCDate());
+  const h = formatNumber(date.getUTCHours());
+  const m = formatNumber(date.getUTCMinutes());
+  const s = formatNumber(date.getUTCSeconds());
   return y + "-" + M + "-" + D + " " + h + ":" + m + ":" + s + " UTC" ;
 }
 
 const getLocaleDaytime = (date) => {    
-  var y = date.getFullYear();
-  var M = formatNumber(date.getMonth() + 1);
-  var D = formatNumber(date.getDate());
-  var h = formatNumber(date.getHours());
-  var m = formatNumber(date.getMinutes());
-  var s = formatNumber(date.getSeconds());
+  const y = date.getFullYear();
+  const M = formatNumber(date.getMonth() + 1);
+  const D = formatNumber(date.getDate());
+  const h = formatNumber(date.getHours());
+  const m = formatNumber(date.getMinutes());
+  const s = formatNumber(date.getSeconds());
   return y + "-" + M + "-" + D + " " + h + ":" + m + ":" + s + " " + Intl.DateTimeFormat().resolvedOptions().timeZone;
 }
 
@@ -41,7 +41,7 @@ const initClock = (window, clockId) => {
 }
 
 const addContent = (document) => {
-  var text = document.getElementById("centerId").innerHTML;  
+  let text = document.getElementById("centerId").innerHTML;  
   text += '<div class="jumbotron jumbotron-fluid">';        
   text += '  <div class="container">';
   text += '    <h1 class="display-4">Time...</h1>';

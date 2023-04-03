@@ -1,10 +1,10 @@
 const spellingAlphabetDictionary = new SpellingAlphabetDictionary("./static/data/spelling_alphabets.json");  
-var currentlang_ISO639_1 = "en";
+let currentlang_ISO639_1 = "en";
 
 const addRadioButtons = (document) => {  
-  var dictionaries = spellingAlphabetDictionary.getDictionaries();
+  const dictionaries = spellingAlphabetDictionary.getDictionaries();
   if (dictionaries) {
-    var text = '<div style="margin-top:20px;" class="container">';
+    let text = '<div style="margin-top:20px;" class="container">';
     text    += '  <div class="row">';
     text    += '    <div class="col-12" id="radioButtonsId">';      
     text = (document.getElementById("centerId").innerHTML = text);
@@ -25,7 +25,7 @@ const addRadioButtons = (document) => {
 }
 
 const addSearchField = (document) => {
-  var text = document.getElementById("centerId").innerHTML;
+  let text = document.getElementById("centerId").innerHTML;
   text += '<div style="margin-top:20px;" class="container">';        
   text += '  <div class="row">';
   text += '    <div class="col-12">';
@@ -43,7 +43,7 @@ const addSearchField = (document) => {
 }
 
 const addResults = (document, codeWordsInfo) => {
-  var text = "";
+  let text = "";
   text  = '<div class="card" style="width: 100%; margin-top:5px;">';
   text += '  <div class="card-body">';
   text += '    <h5 class="card-title">Alphabeth: ' + codeWordsInfo.alphabeth +' </h5>';
@@ -67,10 +67,10 @@ const setupEventListener = (document) => {
   document.getElementById("searchInput").addEventListener("input", function(event) {    
     document.getElementById("codeWordsId").innerHTML = ""; 
     
-    var handle = document.getElementById("searchInput");
-    var query = handle.value.toUpperCase();
+    const handle = document.getElementById("searchInput");
+    const query = handle.value.toUpperCase();
     if (query !== "") {
-      var codeWordsInfo = spellingAlphabetDictionary.getCodeWords(query, currentlang_ISO639_1);
+      const codeWordsInfo = spellingAlphabetDictionary.getCodeWords(query, currentlang_ISO639_1);
       addResults(document, codeWordsInfo);      
     }
     handle.focus();
@@ -79,7 +79,7 @@ const setupEventListener = (document) => {
   // https://stackoverflow.com/questions/58606047/how-to-use-on-addeventlistener-on-radio-button-in-plain-javascript
   document.querySelectorAll('input[name="options"]').forEach((elem) => {
     elem.addEventListener("change", function(event) {
-      var language = event.target.value;      
+      const language = event.target.value;      
       
       if (language === currentlang_ISO639_1) 
         return;

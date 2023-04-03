@@ -1,4 +1,4 @@
-var version = "";
+let version = "";
 
 const updateVersion = async () => {
   await fetch("./static/data/version.txt")
@@ -19,7 +19,7 @@ const updateVersion = async () => {
 const addContent = async (document) => {
   await updateVersion();
 
-  var text = document.getElementById("centerId").innerHTML;  
+  let text = document.getElementById("centerId").innerHTML;  
   text += '<div class="jumbotron jumbotron-fluid">';        
   text += '  <div class="container">';
   text += '    <h1 class="display-4">About...</h1>';
