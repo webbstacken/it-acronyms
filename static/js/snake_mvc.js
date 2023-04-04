@@ -185,8 +185,8 @@ const addView = (document) => {
   text += '    </div>';  
   
   text += '    <div class="col-md-12">';
-  text += '      <button id="' + LEFT_BUTTON_ID + '"type="button" style="width: 173px;" class="btn btn-outline-secondary">Left</button>';
-  text += '      <button id="' + RIGHT_BUTTON_ID + '"type="button" style="width: 173px;" class="btn btn-outline-secondary">Right</button>';  
+  text += '      <button id="' + LEFT_BUTTON_ID + '"type="button" style="width: 173px;" class="btn btn-outline-secondary">Counter clockwise</button>';
+  text += '      <button id="' + RIGHT_BUTTON_ID + '"type="button" style="width: 173px;" class="btn btn-outline-secondary">Clockwise</button>';  
   text += '    </div>';
 
   text += '  </div>';  
