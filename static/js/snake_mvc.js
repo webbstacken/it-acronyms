@@ -1,16 +1,3 @@
-// https://medium.com/programming-essentials/how-to-pass-arguments-to-settimeout-and-setinterval-callbacks-520f13c47e58
-// https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_usage
-// https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes
-// https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/getImageData
-// https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/fillText
-// https://stackoverflow.com/questions/55677/how-do-i-get-the-coordinates-of-a-mouse-click-on-a-canvas-element
-// https://www.geeksforgeeks.org/how-to-get-pixel-from-html-canvas/
-// const getCursorPosition = (canvas, event) => {
-//     const rect = canvas.getBoundingClientRect()
-//     const x = event.clientX - rect.left
-//     const y = event.clientY - rect.top
-//     console.log("x: " + x + " y: " + y)
-//
 
 // Global constants
 const CANVAS_ID = "canvasId";
@@ -35,22 +22,26 @@ const TARGET_COLOR = "rgb(129, 129, 129)";
 
 // Global variables
 let direction = DIRECTIONS.RIGHT;
+let gameLoopCounter = 0;
 let highScore = 0;
 let score = 0;
 let targetX = 0;  
 let targetY = 0;
+let segmentQueue = [];
 
-const updateGameBoard = (ctx, x, y) => {
-  // Get cordinate for next snake segment
+const updateGameBoard = (ctx, x, y) => {  
   ({x, y} = nextCordinate(x, y));    
 
   if (wallCollision(x, y) || segmentCollision(ctx, x, y)) {
-    alert("Game Over!");    
-    clearBoard(ctx);        
-    score = 0;
-    x = START_X;
-    y = START_Y;
     direction = DIRECTIONS.RIGHT;    
+    gameLoopCounter = 0;
+    score = 0;    
+    segmentQueue = [];
+    x = START_X;
+    y = START_Y;    
+    
+    alert("Game Over!");
+    clearBoard(ctx);        
     updateScoreBoard();
     addTarget(ctx);
   }
@@ -58,13 +49,12 @@ const updateGameBoard = (ctx, x, y) => {
     score++; 
     updateScoreBoard();
     addTarget(ctx);
-    addSnakeSegment(ctx, x, y); 
+    updateSnakeSegment(ctx, x, y); 
   }
   else {    
-    addSnakeSegment(ctx, x, y); 
-  }    
-
-  return {"x": x, "y" : y};
+    updateSnakeSegment(ctx, x, y); 
+  }   
+  return {x, y};
 }
 
 const nextCordinate = (x, y) => {
@@ -85,7 +75,6 @@ const nextCordinate = (x, y) => {
      break;
    }
   }
-
   return {"x": x, "y" : y};
 }
 
@@ -94,12 +83,12 @@ const wallCollision = (x, y) => {
 }
 
 const segmentCollision = (ctx, x, y) => {
-  // TODO rgb 128, 128, 128     
+  // TODO get value(s) from constant...
   return collision(ctx, x, y, 128);
 }
 
 const targetCollision = (ctx, x, y) => {
-  // TODO rgb 129, 129, 129     
+  // TODO get value(s) from constant...
   return collision(ctx, x, y, 129);
 }
 
@@ -109,8 +98,7 @@ const clearBoard = (ctx) => {
 }
 
 const updateScoreBoard = () => {  
-  highScore = score > highScore ?  score : highScore;
-  
+  highScore = score > highScore ?  score : highScore;  
   let text = "Highscore: " + highScore + " Score: " + score;
   text = (document.getElementById(SCOREBOARD_ID).innerHTML = text);
 }
@@ -126,9 +114,18 @@ const addTarget = (ctx, init=false) => {
   ctx.fillRect(targetX, targetY, SNAKE_SEGMENT_SIZE*2, SNAKE_SEGMENT_SIZE*2);
 }
 
-const addSnakeSegment = (ctx, x, y) => {
-    ctx.fillStyle = SNAKE_COLOR;
-    ctx.fillRect(x, y, SNAKE_SEGMENT_SIZE, SNAKE_SEGMENT_SIZE);
+const updateSnakeSegment = (ctx, x, y) => {
+  gameLoopCounter++;
+  segmentQueue.push({x,y});
+  ctx.fillStyle = SNAKE_COLOR;
+  ctx.fillRect(x, y, SNAKE_SEGMENT_SIZE, SNAKE_SEGMENT_SIZE);
+  
+  if ((gameLoopCounter % 2) == 0){
+    gameLoopCounter = 0;        
+    const {x, y} = segmentQueue.shift();
+    ctx.fillStyle = CANVAS_COLOR;
+    ctx.fillRect(x, y, SNAKE_SEGMENT_SIZE, SNAKE_SEGMENT_SIZE);  
+  }  
 }
 
 const updateFreeCordinateForTarget = (ctx) => {
@@ -221,7 +218,7 @@ const setupEventListener = (document) => {
   const canvas = document.getElementById(CANVAS_ID)
   canvas.addEventListener("click", function(e) {   
     updateCounterClockwiseDirection();
-     e.preventDefault();    
+    e.preventDefault();    
   });
 
   // right mouse click
@@ -240,7 +237,7 @@ const setupEventListener = (document) => {
   // right button...
   const rightButton = document.getElementById(RIGHT_BUTTON_ID)
   rightButton.addEventListener("click", function(e) {      
-   updateClockwiseDirection()
+    updateClockwiseDirection()
     e.preventDefault();
   });
 }
