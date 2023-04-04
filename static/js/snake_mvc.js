@@ -40,32 +40,31 @@ let score = 0;
 let targetX = 0;  
 let targetY = 0;
 
-const addSnakeSegment = (ctx, x, y) => {
-    ctx.fillStyle = SNAKE_COLOR;
-    ctx.fillRect(x, y, SNAKE_SEGMENT_SIZE, SNAKE_SEGMENT_SIZE);
-}
+const updateGameBoard = (ctx, x, y) => {
+  // Get cordinate for next snake segment
+  ({x, y} = nextCordinate(x, y));    
 
-const addTarget = (ctx, init=false) => {
-  // Clear previous 
-  if (!init) {
-    ctx.fillStyle = CANVAS_COLOR;
-    ctx.fillRect(targetX, targetY, SNAKE_SEGMENT_SIZE*2, SNAKE_SEGMENT_SIZE*2);
+  if (wallCollision(x, y) || segmentCollision(ctx, x, y)) {
+    alert("Game Over!");    
+    clearBoard(ctx);        
+    score = 0;
+    x = START_X;
+    y = START_Y;
+    direction = DIRECTIONS.RIGHT;    
+    updateScoreBoard();
+    addTarget(ctx);
   }
+  else if (targetCollision(ctx, x, y)) {
+    score++; 
+    updateScoreBoard();
+    addTarget(ctx);
+    addSnakeSegment(ctx, x, y); 
+  }
+  else {    
+    addSnakeSegment(ctx, x, y); 
+  }    
 
-  // Add new target
-  updateFreeCordinateForTarget(ctx);
-  ctx.fillStyle = TARGET_COLOR;  
-  ctx.fillRect(targetX, targetY, SNAKE_SEGMENT_SIZE*2, SNAKE_SEGMENT_SIZE*2);
-}
-
-const collision = (ctx, x, y, hitColor) => {    
-  const sx = x;     
-  const sy = y;
-  const sw = SNAKE_SEGMENT_SIZE;
-  const sh = SNAKE_SEGMENT_SIZE;   
-  let temp = ctx.getImageData(sx, sy, sw, sh).data;
-  console.log(temp);
-  return temp.some(color => color == hitColor) ? true: false;
+  return {"x": x, "y" : y};
 }
 
 const nextCordinate = (x, y) => {
@@ -86,7 +85,12 @@ const nextCordinate = (x, y) => {
      break;
    }
   }
+
   return {"x": x, "y" : y};
+}
+
+const wallCollision = (x, y) => {     
+  return  (x <= 0) || (x >= CANVAS_WIDTH) || (y <= 0) || (y >= CANVAS_HEIGHT) ? true: false;
 }
 
 const segmentCollision = (ctx, x, y) => {
@@ -97,6 +101,34 @@ const segmentCollision = (ctx, x, y) => {
 const targetCollision = (ctx, x, y) => {
   // TODO rgb 129, 129, 129     
   return collision(ctx, x, y, 129);
+}
+
+const clearBoard = (ctx) => {    
+    ctx.fillStyle = CANVAS_COLOR;
+    ctx.fillRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT)    
+}
+
+const updateScoreBoard = () => {  
+  highScore = score > highScore ?  score : highScore;
+  
+  let text = "Highscore: " + highScore + " Score: " + score;
+  text = (document.getElementById(SCOREBOARD_ID).innerHTML = text);
+}
+
+const addTarget = (ctx, init=false) => {
+  if (!init) {
+    ctx.fillStyle = CANVAS_COLOR;
+    ctx.fillRect(targetX, targetY, SNAKE_SEGMENT_SIZE*2, SNAKE_SEGMENT_SIZE*2);
+  }
+
+  updateFreeCordinateForTarget(ctx);
+  ctx.fillStyle = TARGET_COLOR;  
+  ctx.fillRect(targetX, targetY, SNAKE_SEGMENT_SIZE*2, SNAKE_SEGMENT_SIZE*2);
+}
+
+const addSnakeSegment = (ctx, x, y) => {
+    ctx.fillStyle = SNAKE_COLOR;
+    ctx.fillRect(x, y, SNAKE_SEGMENT_SIZE, SNAKE_SEGMENT_SIZE);
 }
 
 const updateFreeCordinateForTarget = (ctx) => {
@@ -114,42 +146,13 @@ const getRandomNumber = (maxValue) => {
   return Math.floor(Math.random() * maxValue);
 }
 
-const updateGameBoard = (ctx, x, y) => {
-  // Get cordinate for next snake segment
-  ({x, y} = nextCordinate(x, y));    
+const collision = (ctx, x, y, hitColor) => {    
+  const sx = x;     
+  const sy = y;
+  const sw = SNAKE_SEGMENT_SIZE;
+  const sh = SNAKE_SEGMENT_SIZE;   
 
-  if (wallCollision(x, y) || segmentCollision(ctx, x, y)) {
-    alert("Game Over!");
-    score = 0;
-    direction = DIRECTIONS.RIGHT;
-    x = START_X;
-    y = START_Y;
-    ctx.fillStyle = CANVAS_COLOR;
-    ctx.fillRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT)
-    addTarget(ctx);
-  }
-  else if (targetCollision(ctx, x, y)) {
-    updateScore();
-    addTarget(ctx);
-    addSnakeSegment(ctx, x, y); 
-  }
-  else {    
-    addSnakeSegment(ctx, x, y); 
-  }    
-
-  return {"x": x, "y" : y};
-}
-
-const updateScore = () => {
-  score++; 
-  highScore = score > highScore ?  score : highScore;
-  
-  let text = "Highscore: " + highScore + " Score: " + score;
-  text = (document.getElementById(SCOREBOARD_ID).innerHTML = text);
-}
-
-const wallCollision = (x, y) => {     
-  return  (x <= 0) || (x >= CANVAS_WIDTH) || (y <= 0) || (y >= CANVAS_HEIGHT) ? true: false;
+  return ctx.getImageData(sx, sy, sw, sh).data.some(color => color == hitColor) ? true: false;
 }
 
 // Default functions below
