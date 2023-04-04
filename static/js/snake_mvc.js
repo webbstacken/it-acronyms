@@ -155,7 +155,7 @@ const collision = (ctx, x, y, hitColor) => {
 // Default functions below
 const initGame = (window) => {    
   const handle = document.getElementById(CANVAS_ID);  
-  const ctx = handle.getContext("2d");  
+  const ctx = handle.getContext("2d", {willReadFrequently: true});  
   let x = START_X;
   let y = START_Y;
   
