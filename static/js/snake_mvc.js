@@ -1,4 +1,6 @@
 
+// Bug: start snake and move to other view eg About, GUI locks/freeze! innerhtml null...
+
 // Global constants
 const CANVAS_ID = "canvasId";
 const CANVAS_COLOR = "white";
