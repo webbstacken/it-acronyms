@@ -39,6 +39,6 @@ const initEventhandlers = (document) => {
 }
 
 export function initRouter(document ) {          
-    route(document, ROUTES.SNAKE );    
+    route(document, ROUTES.HOME );    
     initEventhandlers(document);    
 }
