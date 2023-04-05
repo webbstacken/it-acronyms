@@ -61,23 +61,13 @@ const updateGameBoard = (ctx, x, y) => {
 
 const nextCordinate = (x, y) => {
   switch (direction) {
-    case DIRECTIONS.UP: {    
-      y -= SNAKE_SEGMENT_SIZE; break;
-    }
-    case DIRECTIONS.RIGHT: {        
-      x += SNAKE_SEGMENT_SIZE;
-      break;
-    }
-    case DIRECTIONS.DOWN: {        
-      y += SNAKE_SEGMENT_SIZE; 
-      break;
-    }
-   case DIRECTIONS.LEFT: {         
-     x -= SNAKE_SEGMENT_SIZE; 
-     break;
-   }
+    case DIRECTIONS.UP:    y -= SNAKE_SEGMENT_SIZE; break;
+    case DIRECTIONS.RIGHT: x += SNAKE_SEGMENT_SIZE; break;
+    case DIRECTIONS.DOWN:  y += SNAKE_SEGMENT_SIZE; break;
+    case DIRECTIONS.LEFT:  x -= SNAKE_SEGMENT_SIZE; break;
+    default: break;   
   }
-  return {"x": x, "y" : y};
+  return {x, y};
 }
 
 const wallCollision = (x, y) => {     
@@ -111,6 +101,7 @@ const addTarget = (ctx, init=false) => {
     ctx.fillRect(targetX, targetY, SNAKE_SEGMENT_SIZE*2, SNAKE_SEGMENT_SIZE*2);
   }
 
+  // TODO return cordinates instead...
   updateFreeCordinateForTarget(ctx);
   ctx.fillStyle = TARGET_COLOR;  
   ctx.fillRect(targetX, targetY, SNAKE_SEGMENT_SIZE*2, SNAKE_SEGMENT_SIZE*2);
@@ -122,6 +113,7 @@ const updateSnakeSegment = (ctx, x, y) => {
   ctx.fillStyle = SNAKE_COLOR;
   ctx.fillRect(x, y, SNAKE_SEGMENT_SIZE, SNAKE_SEGMENT_SIZE);
   
+  // TODO rethink this...
   if ((gameLoopCounter % 2) == 0){
     gameLoopCounter = 0;        
     const {x, y} = segmentQueue.shift();
