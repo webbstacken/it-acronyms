@@ -1,5 +1,22 @@
-# YAHP
-<!-- 
+# YAHP (Yet Another Home Page)
+
+## 2023-04
+
+- Snake
+- About page
+- Spelling alphabeth
+
+## 2023-03
+
+- Router
+- Connected own domain to GitHub webpages
+- Acronyms (renamed to Knowledge base later on)
+
+
+## References
+
+```
+
 <https://medium.com/programming-essentials/how-to-pass-arguments-to-settimeout-and-setinterval-callbacks-520f13c47e58>
 <https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_usage>
 <https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes>
@@ -12,4 +29,4 @@
      const x = event.clientX - rect.left
      const y = event.clientY - rect.top
      console.log("x: " + x + " y: " + y) 
--->
+```
