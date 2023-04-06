@@ -33,6 +33,7 @@ CAK,Card Authentication Key,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 CAL,Client Access Licenses,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 CDN,Content Delivery Manager,A content delivery network (CDN) refers to a geographically distributed group of servers which work together to provide fast delivery of Internet content. ,https://www.cloudflare.com/learning/cdn/what-is-a-cdn/,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 CDSA,Common Data Security Architecture,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+CHATGPT,ChatGPT,an artificial-intelligence (AI) chatbot developed by OpenAI and launched in November 2022,https://en.wikipedia.org/wiki/ChatGPT,2023-04-06T11:121:00Z,GW,2023-04-06T11:121:00Z,GW
 CHUID,Card Holder Unique Identifier,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 CIA,Confidentiality Integrity Availability,"Confidentiality assurance, Integrity assurance, Availability",,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 CIDR,Classless Internet Domain Routing,A method for allocating IP addresses and for IP routing.,https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
@@ -56,6 +57,7 @@ CSMA/CD,Carrier Sense Multiple Access Collision Avoidance,,,2022-12-15T11:41:25Z
 CSP,Cloud Service Provider,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 CSRF,Cross-site request forgery,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 CT,Computed Tomography,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+CTF,Capture the Flag ,"an exercise in which ""flags"" are secretly hidden in purposefully-vulnerable programs or websites ",,2023-04-06T11:121:00Z,GW,2023-04-06T11:121:00Z,GW
 CTI,Cyber Threat Intelligence ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 CTS,Clear To Send,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 CVE,Common Vulnerabilities and Exposures ,A dictionary of vulnerabilities and exposures in products and systems maintained by MITRE. A CVE-ID is the industry standard method to identify vulnerabilities.,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
@@ -104,6 +106,7 @@ GDOI,Group Domain of Interpretation,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:2
 GDPR,General Data Protection Regulation ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 GID,Group ID,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 GKM,Group Key Management,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+GPT,Generative pre-trained transformers,a family of large language models (LLMs) introduced by the American artificial intelligence organization OpenAI in 2018,https://en.wikipedia.org/wiki/Generative_pre-trained_transformer,2023-04-06T11:121:00Z,GW,2023-04-06T11:121:00Z,GW
 GRE,Generic Routing Encapsulation,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 GTLD,generic Top Level Domains,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 GUI,Graphical User Interface,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
@@ -196,6 +199,7 @@ NIC,Network Interface Controller,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,
 NIDS,Network Intrusion Detection System ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 NIST,National Institute of Standards and Technology ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 NMS,Network Management System ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+NONCE,nonce, a nonce is an arbitrary number that can be used just once in a cryptographic communication,https://en.wikipedia.org/wiki/Cryptographic_nonce,2023-04-06T11:121:00Z,GW,2023-04-06T11:121:00Z,GW
 NSA,National Security Agency ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 NSF, National Science Foundation,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 NSM,Network Security Monitoring ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
@@ -210,6 +214,7 @@ OPC,Open Compute Project,,https://www.opencompute.org/,2023-01-19T14:35:00Z,GW,2
 OPEX,Operaional Expenditure,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 OS,Operating System,"An operating system (OS) is system software that manages computer hardware and software resources, and provides common services for computer programs.",https://en.wikipedia.org/wiki/Operating_system,2023-03-09T09:35:00Z,GW,2023-03-09T09:35:00Z,GW
 OSI,Open System Interconnection (OSI) Reference Model,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+OSINT ,Open-source intelligence,is the collection and analysis of data gathered from open sources (covert and publicly available sources) to produce actionable intelligence.,https://en.wikipedia.org/wiki/Open-source_intelligence,2023-04-06T11:121:00Z,GW,2023-04-06T11:121:00Z,GW
 OSPF,Open Shortest Path First,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 OSSEC,Open Source HIDS SECurity ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 OT,Operational Technology,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
@@ -231,7 +236,7 @@ PING,Packet Internet Grouper,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 PIV,Personal Identity Verification,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 PK,Public Key,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 PKCS,Public Key Cryptography System,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
-PKI,Public Key Infrastructure ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+PKI,Public Key Infrastructure ,"a set of roles, policies, hardware, software and procedures needed to create, manage, distribute, use, store and revoke digital certificates and manage public-key encryption",https://en.wikipedia.org/wiki/Public_key_infrastructure,2023-12-15T11:41:25Z,GW,2023-04-06T12:57:00Z,GW
 PKIX,Public Key Infrastructure for X.509 Certificates,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 PKM,Public Key Management,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 PNAC,Port-based Network Access Control,IEEE 802.1X is an IEEE Standard for ,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
@@ -250,6 +255,8 @@ RF,Radio Frequencies,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 RFC,Request For Comment,"A Request for Comments (RFC) is a publication in a series from the principal technical development and standards-setting bodies for the Internet, most prominently the Internet Engineering Task Force (IETF).  ",https://en.wikipedia.org/wiki/Request_for_Comments,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 RFM,Risk Management Framework ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 RHEL,Red Hat Enterprise Linux,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+RNG,Random number generation,,,2023-04-06T11:121:00Z,GW,2023-04-06T11:121:00Z,GW
+ROCA,Return of Coppersmith's attack,a cryptographic weakness that allows the private key of a key pair to be recovered from the public key in keys generated by devices with the vulnerability,https://en.wikipedia.org/wiki/ROCA_vulnerability,2023-04-06T11:121:00Z,GW,2023-04-06T11:121:00Z,GW
 RPM,Red Hat Package Manager ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 RR,Resource Record ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 RSA,Retrospective Security Analysis ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
@@ -304,6 +311,7 @@ TFTP,Trivial File Transfer Protocol,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:2
 TIP,Threat Intelligence Platform,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 TLD,Top Level Domain,"the TLD is the last part of a domain name, such as .com, .net, .org, a two letter country domain, or one of several other TLDs out there.",,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 TLS,Transport Layer Security,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+TOCTOU,time-of-check to time-of-use, is a class of software bugs caused by a race condition involving the checking of the state of a part of a system (such as a security credential) and the use of the results of that check,https://en.wikipedia.org/wiki/Time-of-check_to_time-of-use,2023-04-06T11:121:00Z,GW,2023-04-06T11:121:00Z,GW
 TOS,Type of Service ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 TPO,Trusted Post Office,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 TQM,Total Quality Management ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
@@ -325,10 +333,12 @@ VNC,Virtual Network Computing,irtual Network Computing (VNC) is a graphical desk
 VOIP, Voice Over IP (Voice Over the Internet Protocol),,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 VPC,Virtual Private Cloud,"A virtual private cloud (VPC) is an on-demand configurable pool of shared resources allocated within a public cloud environment, providing a certain level of isolation between the different organizations (denoted as users hereafter) using the resources.  ",https://en.wikipedia.org/wiki/Virtual_private_cloud,2023-01-23T09:27:00Z,GW,2023-01-23T09:27:00Z,GW
 VPN,Virtual Private Network,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+W3C,World Wide Web Consortium,The World Wide Web Consortium (W3C) is the main international standards organization for the World Wide Web.,https://en.wikipedia.org/wiki/World_Wide_Web_Consortium,2023-04-06T11:121:00Z,GW,2023-04-06T11:121:00Z,GW
 WAF,Web Application Firewall,"A web application firewall (WAF) is a specific form of application firewall that filters, monitors, and blocks HTTP traffic to and from a web service. ",https://en.wikipedia.org/wiki/Web_application_firewall,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 WAMP,"Windows, Apache, MySQL, PHP ",,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 WAN,Wide Area Network,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 WAP,Web Application Proxy,is a role service in Windows Server Remote Access,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+WEBAUTHN,Web Authentication,a web standard published by the World Wide Web Consortium (W3C),https://en.wikipedia.org/wiki/WebAuthn,2023-04-06T11:121:00Z,GW,2023-04-06T11:121:00Z,GW
 WISA,"Windows, IIS, SQL, ASP.NET",,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 WLAN,Wireless Local Area Network ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 WLC,Wireless LAN Controller ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
@@ -337,8 +347,8 @@ WSA,Cisco Web Security Appliance ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z
 WSTG,Web Security Testing Guide,,https://owasp.org/www-project-web-security-testing-guide/,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 WSUS,Windows Server Update Services,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 WWW,Word Wide Web,"The World Wide Web (WWW), commonly known as the Web, is an information system enabling documents and other web resources to be accessed over the Internet ",https://en.wikipedia.org/wiki/World_Wide_Web,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
-X509,In cryptography,X.509 is an International Telecommunication Union (ITU) standard defining the format of public key certificates. X.509 certificates are used in many Internet protocols,,2023-01-23T09:27:00Z,GW,2023-01-23T09:27:00Z,GW
 X.509,In cryptography,X.509 is an International Telecommunication Union (ITU) standard defining the format of public key certificates. X.509 certificates are used in many Internet protocols,,2023-01-23T09:27:00Z,GW,2023-01-23T09:27:00Z,GW
+X509,In cryptography,X.509 is an International Telecommunication Union (ITU) standard defining the format of public key certificates. X.509 certificates are used in many Internet protocols,,2023-01-23T09:27:00Z,GW,2023-01-23T09:27:00Z,GW
 XFS,Linux file system,"Good industry standard. Good performance when dealing with large files, but has worse performance when dealing with many small files",,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 YUM,Yellow Dog Updater,"Just as APT is a more advanced front-end for dpkg, YUM (Yellow Dog Updater) is the most popular choice as front-end for RPM, the basic package management software for RHEL operating systems.",,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 ZFS,"Z File System, Linux file system","Good industry standard. Good performance when dealing with large files, but has worse performance when dealing with many small files",,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
