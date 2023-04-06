@@ -17,13 +17,16 @@ const updateVersion = async () => {
 }
 
 const addContent = async (document) => {
-  await updateVersion();
+  await updateVersion();    
+  const date = new Date(parseInt(version.split(".")[2]) * 1000);
+  const deployd = date.toISOString();
 
   let text = document.getElementById("centerId").innerHTML;  
   text += '<div class="jumbotron jumbotron-fluid">';        
   text += '  <div class="container">';
   text += '    <h1 class="display-4">About...</h1>';
-  text += '      <p class="lead">Version: ' + version +  '</p>'
+  text += '      <p class="lead">Version: ' + version + '</p>'
+  text += '      <p class="lead">Deployd: ' + deployd + '</p>'
   text += '      <hr class="my-4">';
   // TODO https://wiki.creativecommons.org/wiki/best_practices_for_attribution
   text += '      <p class="lead">Credits/licenses</p>';
