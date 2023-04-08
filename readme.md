@@ -2,16 +2,23 @@
 
 ## 2023-04
 
-- Snake
-- About page
-- Spelling alphabeth
+### "Speech to text"
+
+### YASnake
+
+### About page
+
+### Spelling alphabeth
 
 ## 2023-03
 
-- Router
-- Connected own domain to GitHub webpages
-- Acronyms (renamed to Knowledge base later on)
+### Time
 
+### Router
+
+### Connected own domain to GitHub webpages
+
+### Acronyms (renamed to Knowledge base)
 
 ## References
 
@@ -24,7 +31,7 @@ https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/fillTe
 https://stackoverflow.com/questions/55677/how-do-i-get-the-coordinates-of-a-mouse-click-on-a-canvas-element
 https://www.geeksforgeeks.org/how-to-get-pixel-from-html-canvas
 https://wiki.creativecommons.org/wiki/best_practices_for_attribution
--->
+
 
 ```
  const getCursorPosition = (canvas, event) => {
@@ -33,3 +40,4 @@ https://wiki.creativecommons.org/wiki/best_practices_for_attribution
      const y = event.clientY - rect.top
      console.log("x: " + x + " y: " + y) 
 ```
+-->

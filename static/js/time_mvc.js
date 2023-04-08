@@ -47,7 +47,8 @@ const addContent = (document) => {
   text += '    <h1 class="display-4">Time...</h1>';
   text += '      <p class="lead">text text</p>'
   text += '      <hr class="my-4">';
-  text += '      <div id="clockId"></div>'
+  text += '      <div id="clockId"></div>'  
+  text += '      <input type="week" id="calenderId" name="week" id="camp-week" min="1970-W1" max="2032-W52" required></input>';
   text += '    </div>';
   text += '  </div>';
   text += '</div>';  
@@ -55,8 +56,9 @@ const addContent = (document) => {
 }
 
 const setupView = (document) => {
-  addContent(document);      
+  addContent(document);
 }
+
 
 const setupEventListener = (document) => {
   // TODO 
