@@ -11,13 +11,20 @@ const dict = {
   "NIO":  9,
   "PUNKT": ".",
   "FRÅGETECKEN": "?",
-  "KOMMA": ","
+  "KOMMATECKEN": ",",
+  "UTROPSTECKEN": "!",
+  "PLUSTECKEN": "+",
+  "MINUSTECKEN": "-",
 }
 
 const setUpSpeechRecognition = (document, speechRecognition) => {        
     speechRecognition.continuous = true;
     speechRecognition.interimResults = true;
     speechRecognition.lang = ['sv-SE'];   
+
+    speechRecognition.onerror = (event) => {                  
+      logError(document, event.error);
+    }
 
     speechRecognition.onresult = (event) => {      
       let text = "";
@@ -38,20 +45,12 @@ const setUpSpeechRecognition = (document, speechRecognition) => {
       document.getElementById("textId").innerHTML = text;
     }
 }
-
-const setupView = (document) => {
-  let style = 'height: 750px;padding: 10px; padding-top: 50px;';
-  style +=    'font-family: Helvetica, Arial, sans-serif; font-size: 40px; font-style: normal; font-variant: normal; font-weight: 200; line-height: 60px;';
-  style +=    'border-width: 1px; border-style: solid; border-color: #E5E5E5; border-radius: 12px;';
-
-  let text = "";     
-  text += '<div class="container-fluid" style="padding-left: 150px;padding-right: 150px;>';         
-  text += ' <div class="row">';          
-  text += '   <div id="textId" data-status="start" style="'+ style + '">Klicka i rutan för att starta!</div>';
-  text += ' </div>'; 
-  text += '</div>'; 
-    
-  document.getElementById("centerId").innerHTML = text;    
+const logError = (document, error) => {
+  let errorTextArea = document.getElementById("errorId");    
+  errorTextArea.style.borderColor = "#F25454";   
+  errorTextArea.innerHTML = error;
+  alert(error);
+  console.log(error)    
 }
 
 const startRecording = (document, speechRecognition) => {  
@@ -80,14 +79,33 @@ const setupEventListener = (document, speechRecognition) => {
   }
 }
 
-export function initSpeechToText(document) {  
-  if ("webkitSpeechRecognition" in window) {    
-    setupView(document);  
-    let speechRecognition = new webkitSpeechRecognition();
+const setupView = (document) => {
+  let style = 'height: 80%;padding: 10px; padding-top: 20px;';
+  style +=    'font-family: Helvetica, Arial, sans-serif; font-size: 40px; font-style: normal; font-variant: normal; font-weight: 200; line-height: 60px;';
+  style +=    'border-width: 1px; border-style: solid; border-color: #E5E5E5; border-radius: 12px;';
+
+  let text = "";     
+  text += '<div class="container-fluid" style="padding-left: 10%;padding-right: 10%;">';         
+  text += '   <div class="row">';          
+  text += '       <div id="textId" data-status="start" style="'+ style + '">Klicka här för att starta "text till tal"</div>';
+  text += '   </div>'; 
+  text += '   <div class="row">';          
+  text += '       <div id="errorId" style="'+ style + ' height: 20%;"></div>';
+  text += '   </div>';   
+  text += '</div>'; 
+    
+  document.getElementById("centerId").innerHTML = text;    
+}
+
+export function initSpeechToText(document) {
+  setupView(document);  
+  const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if (typeof SpeechRecognition == undefined) {        
+    logError(document, "SpeechRecognition not supported!");
+  } 
+  else {      
+    let speechRecognition = new SpeechRecognition();
     setupEventListener(document, speechRecognition);
     setUpSpeechRecognition(document, speechRecognition);
-  } 
-  else {
-    alert("webkitSpeechRecognition not supported!");
   }
 }
