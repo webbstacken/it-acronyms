@@ -9,7 +9,7 @@ ACE,Access Control Entries,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 ACL,Access Control List ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 AD,Active Directory,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 ADDS,Active Directory Domain Services,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
-AES,Advanced Encryption Standard ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+AES,Advanced Encryption Standard ,"The Advanced Encryption Standard (AES), also known by its original name Rijndael, is a specification for the encryption of electronic data established by the U.S. National Institute of Standards and Technology (NIST) in 2001",https://en.wikipedia.org/wiki/Advanced_Encryption_Standard,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 AKA,Also Known As,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 AMP,Advanced Malware Protection,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 ANSI,American National Standards Institute,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
@@ -33,6 +33,7 @@ CAK,Card Authentication Key,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 CAL,Client Access Licenses,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 CDN,Content Delivery Manager,A content delivery network (CDN) refers to a geographically distributed group of servers which work together to provide fast delivery of Internet content. ,https://www.cloudflare.com/learning/cdn/what-is-a-cdn/,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 CDSA,Common Data Security Architecture,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+CHACHA20 ,,Stream cipher ,,2023-04-13T08:21:00Z,GW,2023-04-13T08:21:00Z,GW
 CHATGPT,ChatGPT,an artificial-intelligence (AI) chatbot developed by OpenAI and launched in November 2022,https://en.wikipedia.org/wiki/ChatGPT,2023-04-06T11:121:00Z,GW,2023-04-06T11:121:00Z,GW
 CHUID,Card Holder Unique Identifier,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 CIA,Confidentiality Integrity Availability,"Confidentiality assurance, Integrity assurance, Availability",,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
@@ -55,6 +56,7 @@ CSIRC,computer security incident response capability ,,,2022-12-15T11:41:25Z,GW,
 CSIRT,Computer Security Incident Response Team ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 CSMA/CD,Carrier Sense Multiple Access Collision Avoidance,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 CSP,Cloud Service Provider,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+CSPRNG,Cryptographically Secure Pseudorandom Number Generator ,A cryptographically secure pseudorandom number generator (CSPRNG) or cryptographic pseudorandom number generator (CPRNG) is a pseudorandom number generator (PRNG) with properties that make it suitable for use in cryptography.,https://en.wikipedia.org/wiki/Cryptographically_secure_pseudorandom_number_generator,2023-04-13T08:21:00Z,GW,2023-04-13T08:21:00Z,GW
 CSRF,Cross-site request forgery,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 CT,Computed Tomography,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 CTF,Capture the Flag ,"an exercise in which ""flags"" are secretly hidden in purposefully-vulnerable programs or websites ",,2023-04-06T11:121:00Z,GW,2023-04-06T11:121:00Z,GW
@@ -98,10 +100,12 @@ EXT4,Linux file system,"Default. Journalling. Robust. If in doubt, EXT4",,2022-1
 FCS,Frame Check Sequence,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 FDA,Food and Drug Administration,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 FEMA,Federal Emergency Management Agency,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+FIDO,Fast IDentity Online ,"The FIDO (""Fast IDentity Online"") Alliance is an open industry association launched in February 2013 whose stated mission is to develop and promote authentication standards that ""help reduce the world’s over-reliance on passwords"".",https://fidoalliance.org/what-is-fido/,2023-04-13T08:21:00Z,GW,2023-04-13T08:21:00Z,GW
 FIM,File integrity monitoring ,"File integrity monitoring (FIM) is an internal control or process that performs the act of validating the integrity of operating system and application software files using a verification method between the current file state and a known, good baseline.",https://en.wikipedia.org/wiki/File_integrity_monitoring,2023-03-13T09:38:00Z,GW,2023-03-13T09:38:00Z,GW
 FIRST,Forum of Incident Response and Security Teams ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 FQDN,Fully Qualified Domain Name,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 FTP,File Transfer Protocol. ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+GCM,Galois/Counter Mode,"In cryptography, Galois/Counter Mode (GCM) is a mode of operation for symmetric-key cryptographic block ciphers which is widely adopted for its performance.",https://en.wikipedia.org/wiki/Galois/Counter_Mode,2023-04-13T08:21:00Z,GW,2023-04-13T08:21:00Z,GW
 GDOI,Group Domain of Interpretation,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 GDPR,General Data Protection Regulation ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 GID,Group ID,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
@@ -118,7 +122,7 @@ HIPAA,Health Insurance Portability and Accountability Act ,,,2022-12-15T11:41:25
 HIPS,Host Intrusion Prevention System ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 HMAC,Hash-based Message Authentication Code ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 HPC,High Performance Computing,,https://en.wikipedia.org/wiki/High-performance_computing,2023-01-19T14:35:00Z,GW,2023-01-19T14:35:00Z,GW
-HSM,Hardware Security Module,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+HSM,Hardware Security Module,Purpose designed hardware devices for cryptographic operations. Typically used to generate/store keys and sign/decrypt data.,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 HTTP,Hypertext Transfer Protocol,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 HTTPS,HTTP Secure,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 HUB,hub acts as a multi-port repeater,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
@@ -148,7 +152,7 @@ IOT,Internet of Things,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 IP,Internet Protocol ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 IPFIX,Internet Protocol Flow Information Export ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 IPS,Intrusion Prevention System,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
-IPSEC,Internet Protocol Security,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+IPSEC,Internet Protocol Security,"In computing, Internet Protocol Security (IPsec) is a secure network protocol suite that authenticates and encrypts packets of data to provide secure encrypted communication between two computers over an Internet Protocol network. ",https://en.wikipedia.org/wiki/IPsec,2022-12-15T11:41:25Z,GW,2023-04-13T08:29:00Z,GW
 ISCSI,Internet Small Computer Systems Interface ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 ISE,Identity Services Engine,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 ISMS,Information Security Management System,An information security management system (ISMS) is a set of policies and procedures for systematically managing an organization's sensitive data. ,https://www.techtarget.com/whatis/definition/information-security-management-system-ISMS,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
@@ -160,6 +164,7 @@ JBOD,Just a bunch of disks,,https://en.wikipedia.org/wiki/Non-RAID_drive_archite
 JMS,Getting Started with Java Message Service,,https://www.oracle.com/technical-resources/articles/java/intro-java-message-service.html,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 KA,Knowledge Area,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 KDC,Key Distribution Center,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+KDF,Key derivation function,"a cryptographic algorithm that derives one or more secret keys from a secret value such as a master key, a password, or a passphrase using a pseudorandom function (which typically uses a cryptographic hash function or block cipher)",https://en.wikipedia.org/wiki/Key_derivation_function,2023-04-13T08:21:00Z,GW,2023-04-13T08:21:00Z,GW
 KM,Key Management,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 KMS,Key Management System,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 KPI,Key Performance Indicators,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
@@ -174,6 +179,7 @@ LUKS,Linux Unified Key Setup ,The Linux Unified Key Setup (LUKS) is a disk encry
 MAC,Mandatory Access Control ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 MAC,Media Access Control,Network interface MAC address,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 MAC,Message Authentication Code,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+MACSEC,MAC Security,"IEEE 802 Local Area Networks (LANs) are deployed in networks that support mission-critical applications and a wide variety of devices, implemented and administered by different organizations, and serving customers with different economic interests ",https://1.ieee802.org/security/802-1ae/,2023-04-13T08:21:00Z,GW,2023-04-13T08:21:00Z,GW
 MAM,Mobile Application Management,(MAM) to control corporate-owned software,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 MAMP,"macOS, Apache, MySQL, PHP",,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 MCU,Microcontroller Unit,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
@@ -186,6 +192,7 @@ MITEM,Man-in-the-middle,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 MKD,Multipoint Key Distribution,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 MPLS,Multi-protocol Label Switching ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 MTBF,Mean Time Between Failures,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+MTLS,Mutual Transport Layer Security  ,Mutual Transport Layer Security (mTLS) is a process that establishes an encrypted TLS connection in which both parties use X.509 digital certificates to authenticate each other.,https://www.f5.com/labs/learning-center/what-is-mtls,2023-04-13T08:21:00Z,GW,2023-04-13T08:21:00Z,GW
 MTTR,Mean Time To Recovery/Repair,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 NAAS,Network as a Service,"NaaS is a cloud model that enables users to easily operate the network and achieve the outcomes they expect from it without owning, building, or maintaining their own infrastructure.",https://www.cisco.com/c/en/us/solutions/enterprise-networks/network-as-service-naas.html,2023-01-23T09:27:00Z,GW,2023-01-23T09:27:00Z,GW
 NAC,Network Access Control,"IEEE 802.1X. Network access control, also called network admission control, is a method to bolster the security, visibility and access management  of a proprietary network. It restricts the availability of network resources to endpoint devices and users that comply with a defined security policy.",https://www.techtarget.com/searchnetworking/definition/network-access-control,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
@@ -206,14 +213,20 @@ NSM,Network Security Monitoring ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,
 NTLM,New Technology LAN Manager,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 NTP,Network Time Protocol,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 OASIS,Organization for the Advancement of Structured Information Standards,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
-OCSP,Online Certificate Status Protocol,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+OCSP,Online Certificate Status Protocol,The Online Certificate Status Protocol (OCSP) is an Internet protocol used for obtaining the revocation status of an X.509 digital certificate.,https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 ODM,Original Design Manufacturing,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 OEM,Original Equipment Manufacturer,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 OMB,Office of Management and Budget,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 OPC,Open Compute Project,,https://www.opencompute.org/,2023-01-19T14:35:00Z,GW,2023-01-19T14:35:00Z,GW
 OPEX,Operaional Expenditure,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 OS,Operating System,"An operating system (OS) is system software that manages computer hardware and software resources, and provides common services for computer programs.",https://en.wikipedia.org/wiki/Operating_system,2023-03-09T09:35:00Z,GW,2023-03-09T09:35:00Z,GW
-OSI,Open System Interconnection (OSI) Reference Model,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+OSI,Open System Interconnection (OSI) Reference Model,"7	Application
+6	Presentation 
+5	Session
+4	Transport
+3	Network
+2	Data link
+1	Physical",https://en.wikipedia.org/wiki/OSI_model,2022-12-15T11:41:25Z,GW,2023-04-13T08:32:00Z,GW
 OSINT ,Open-source intelligence,is the collection and analysis of data gathered from open sources (covert and publicly available sources) to produce actionable intelligence.,https://en.wikipedia.org/wiki/Open-source_intelligence,2023-04-06T11:121:00Z,GW,2023-04-06T11:121:00Z,GW
 OSPF,Open Shortest Path First,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 OSSEC,Open Source HIDS SECurity ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
@@ -236,17 +249,21 @@ PING,Packet Internet Grouper,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 PIV,Personal Identity Verification,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 PK,Public Key,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 PKCS,Public Key Cryptography System,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+PKCS #11,,"In cryptography, PKCS #11 is one of the Public-Key Cryptography Standards, and also refers to the programming interface to create and manipulate cryptographic tokens (a token where the secret is a cryptographic key).",https://en.wikipedia.org/wiki/PKCS_11,2023-04-13T08:21:00Z,GW,2023-04-13T08:21:00Z,GW
 PKI,Public Key Infrastructure ,"a set of roles, policies, hardware, software and procedures needed to create, manage, distribute, use, store and revoke digital certificates and manage public-key encryption",https://en.wikipedia.org/wiki/Public_key_infrastructure,2023-12-15T11:41:25Z,GW,2023-04-06T12:57:00Z,GW
 PKIX,Public Key Infrastructure for X.509 Certificates,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 PKM,Public Key Management,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 PNAC,Port-based Network Access Control,IEEE 802.1X is an IEEE Standard for ,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+POK,Proof of knowledge,an interactive proof in which the prover succeeds in 'convincing' a verifier that the prover knows something ,https://en.wikipedia.org/wiki/Proof_of_knowledge,2023-04-13T08:21:00Z,GW,2023-04-13T08:21:00Z,GW
 POP3,Post Office Protocol version 3 ,"In computing, the Post Office Protocol (POP) is an application-layer Internet standard protocol used by e-mail clients to retrieve e-mail from a mail server. ",https://en.wikipedia.org/wiki/Post_Office_Protocol,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 POS,Point of Sale,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 PPP,Point-to-Point ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 PRADS,Passive Real-time Asset Detection System ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 PSI,Personal Security Information is another type of PII,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 PSIRT,Product Security Incident Response Team,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+PSK,Pre-shared key,"a key from shared secret, the key derivation function is typically used. Such systems almost always use symmetric key cryptographic algorithms",https://en.wikipedia.org/wiki/Pre-shared_key,2023-04-13T08:21:00Z,GW,2023-04-13T08:21:00Z,GW
 R&D,Research and Development,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+RAAS, Ransomware as a Service (RaaS) ,a business model between ransomware operators and affiliates in which affiliates pay to launch ransomware attacks developed by operators,https://www.crowdstrike.com/cybersecurity-101/ransomware/ransomware-as-a-service-raas/,2023-04-13T08:21:00Z,GW,2023-04-13T08:21:00Z,GW
 RADIUS,Remote Authentication Dial-In User Service ,"Remote Authentication Dial-In User Service (RADIUS) is a networking protocol that provides centralized authentication, authorization, and accounting (AAA) management for users who connect and use a network service. ",https://en.wikipedia.org/wiki/RADIUS,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 RBAC,Role-based access control ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 REPL,Read-Eval-Print Loop," is a computer environment where user inputs are read and evaluated, and then the results are returned to the user",,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
@@ -278,7 +295,8 @@ SDP,Software Defined Perimeter,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 SELINUX,Security-Enhanced Linux,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 SFTP,SSH File Transfer Protocol ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 SGID,Set-group identification,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
-SHA,Secure Hash Algorithm ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+SHA,Secure Hash Algorithm ,a family of cryptographic hash functions published by the National Institute of Standards and Technology,https://en.wikipedia.org/wiki/Secure_Hash_Algorithms,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+SHA1,,SHA-1 and SHA-2 NSA,,2023-04-13T08:21:00Z,GW,2023-04-13T08:21:00Z,GW
 SIEM,Security Information and Event Management,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 SKMS,Secure Key Management System,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 SKU,Stock Keeping Unit,"in inventory management, a stock keeping unit is the unit of measure in which the stocks of a material are managed.",https://en.wikipedia.org/wiki/Stock_keeping_unit,2023-01-19T14:35:00Z,GW,2023-01-19T14:35:00Z,GW
@@ -300,6 +318,7 @@ SSE,Systems Security Engineering ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z
 SSH,Secure Shell,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 SSID,Service Set Identifier ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 SSL,Secure Sockets Layer ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+SSS,Shamir's Secret Sharing ,"an efficient secret sharing algorithm for distributing private information (the ""secret"") among a group so that the secret cannot be revealed unless a quorum of the group acts together to pool their knowledge",https://en.wikipedia.org/wiki/Shamir%27s_secret_sharing,2023-04-13T08:21:00Z,GW,2023-04-13T08:21:00Z,GW
 STIX,Structured Threat Information Expression,Structured Threat Information Expression — a standard used to create and share cyber threat intelligence information in a machine-readable format. ,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 STP,Spanning Tree Protocol,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 SUID,Set Owner User ID,SUID or Set Owner User ID is a permission bit flag that applies to executables. SUID allows an alternate user to run an executable with the same permissions as the owner of the file instead of the permissions of the alternate user.,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
@@ -312,6 +331,7 @@ TIP,Threat Intelligence Platform,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,
 TLD,Top Level Domain,"the TLD is the last part of a domain name, such as .com, .net, .org, a two letter country domain, or one of several other TLDs out there.",,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 TLS,Transport Layer Security,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 TOCTOU,time-of-check to time-of-use, is a class of software bugs caused by a race condition involving the checking of the state of a part of a system (such as a security credential) and the use of the results of that check,https://en.wikipedia.org/wiki/Time-of-check_to_time-of-use,2023-04-06T11:121:00Z,GW,2023-04-06T11:121:00Z,GW
+TOCTOU ,Time-of-check to time-of-use, a class of software bugs caused by a race condition involving the checking of the state of a part of a system (such as a security credential) and the use of the results of that check,https://en.wikipedia.org/wiki/Time-of-check_to_time-of-use,2023-04-13T08:21:00Z,GW,2023-04-13T08:21:00Z,GW
 TOS,Type of Service ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 TPO,Trusted Post Office,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 TQM,Total Quality Management ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
