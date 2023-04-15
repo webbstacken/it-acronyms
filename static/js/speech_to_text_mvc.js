@@ -1,4 +1,4 @@
-const dict = {
+const GRAMMAR = {
   "NOLL": 0,
   "ETT":  1,
   "TVÅ":  2,
@@ -19,63 +19,52 @@ const dict = {
 
 const setUpSpeechRecognition = (document, speechRecognition) => {        
     speechRecognition.continuous = true;
-    speechRecognition.interimResults = true;
+    speechRecognition.interimResults = false;
     speechRecognition.lang = ['sv-SE'];   
 
     speechRecognition.onerror = (event) => {                  
-      logError(document, event.error);
+      console.log(event.error);
+      stopRecording(document, speechRecognition);
     }
 
-    speechRecognition.onresult = (event) => {      
+    speechRecognition.onresult = (event) => {            
+      console.log("onresult event!");
       let text = "";
-      let index = event.resultIndex;
-      while (index < event.results.length) {       
-        if (event.results[index].isFinal) {
-          stopRecording(document, speechRecognition);
-          text = event.results[index][0].transcript; 
-          const textArray = text.split(" ");
-          text = "";
-          textArray.forEach(word => {            
-            text += dict[word.toUpperCase()] == undefined ? word : dict[word.toUpperCase()];
-            text += " ";              
-          });
-        }
-        index++;         
-      }
+      if (event.results[event.resultIndex].isFinal) {
+        console.log("Event isFinal == true");
+        stopRecording(document, speechRecognition);
+        const textArray = (event.results[event.resultIndex][0].transcript).split(" ");                 
+        textArray.forEach(word => {                        
+          text += GRAMMAR[word.toUpperCase()] == undefined ? word : GRAMMAR[word.toUpperCase()];
+          text += " ";
+          console.log("Text: '" + text + "'");              
+        });
+      }          
       document.getElementById("textId").innerHTML = text;
     }
 }
-const logError = (document, error) => {
-  let errorTextArea = document.getElementById("errorId");    
-  errorTextArea.style.borderColor = "#F25454";   
-  errorTextArea.innerHTML = error;
-  alert(error);
-  console.log(error)    
-}
 
-const startRecording = (document, speechRecognition) => {  
+const startRecording = (document, speechRecognition) => {   
   let textArea = document.getElementById("textId");
   textArea.innerHTML = "";
-  textArea.dataset.status = "stop";
+  textArea.dataset.recording_started = true;
   textArea.style.borderColor = "#F25454";    
-
   speechRecognition.start();        
+  console.log("Recording started!");
 }
 
 const stopRecording = (document, speechRecognition) => {  
-  let textArea = document.getElementById("textId");  
-  textArea.innerHTML = "";
-  textArea.dataset.status = "start";
+  let textArea = document.getElementById("textId");
+  textArea.dataset.recording_started = false;
   textArea.style.borderColor = "#E5E5E5";          
-
   speechRecognition.stop();
+  console.log("Recording stopped!");  
 }
+
 const setupEventListener = (document, speechRecognition) => {
   let textArea = document.getElementById("textId");
   textArea.onclick = () => {    
-    if (textArea.dataset.status == "start") {      
-      startRecording(document, speechRecognition);
-    }   
+    textArea.dataset.recording_started == "false" ? startRecording(document, speechRecognition) : stopRecording(document, speechRecognition);          
   }
 }
 
@@ -85,13 +74,10 @@ const setupView = (document) => {
   style +=    'border-width: 1px; border-style: solid; border-color: #E5E5E5; border-radius: 12px;';
 
   let text = "";     
-  text += '<div class="container-fluid" style="padding-left: 10%;padding-right: 10%;">';         
+  text += '<div class="container-fluid" style="padding-top: 10%;padding-left: 10%;padding-right: 10%;">';         
   text += '   <div class="row">';          
-  text += '       <div id="textId" data-status="start" style="'+ style + '">Klicka här för att starta "text till tal"</div>';
+  text += '       <div id="textId" data-recording_started="false" style="'+ style + '">Tryck här för att starta "text till tal"</div>';
   text += '   </div>'; 
-  text += '   <div class="row">';          
-  text += '       <div id="errorId" style="'+ style + ' height: 20%;"></div>';
-  text += '   </div>';   
   text += '</div>'; 
     
   document.getElementById("centerId").innerHTML = text;    
@@ -101,11 +87,12 @@ export function initSpeechToText(document) {
   setupView(document);  
   const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
   if (typeof SpeechRecognition == undefined) {        
-    logError(document, "SpeechRecognition not supported!");
+    console.log("SpeechRecognition NOT supported!");
   } 
-  else {      
+  else {          
     let speechRecognition = new SpeechRecognition();
     setupEventListener(document, speechRecognition);
     setUpSpeechRecognition(document, speechRecognition);
+    console.log("SpeechRecognition supported!");
   }
 }
