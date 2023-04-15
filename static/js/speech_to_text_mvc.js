@@ -46,40 +46,40 @@ const setUpSpeechRecognition = (document, speechRecognition) => {
 
 const startRecording = (document, speechRecognition) => {   
   let textArea = document.getElementById("textId");
-  textArea.innerHTML = "";
-  textArea.dataset.recording_started = true;
-  textArea.style.borderColor = "#F25454";    
+  textArea.innerHTML = "";  
+  let rec = document.getElementById("recId");
+  rec.dataset.recording_started = true;  
+  rec.textContent = "STOPPA INSPELNING";
   speechRecognition.start();        
   console.log("Recording started!");
 }
 
-const stopRecording = (document, speechRecognition) => {  
-  let textArea = document.getElementById("textId");
-  textArea.dataset.recording_started = false;
-  textArea.style.borderColor = "#E5E5E5";          
+const stopRecording = (document, speechRecognition) => {      
+  let rec = document.getElementById("recId");
+  rec.dataset.recording_started = false;  
+  rec.textContent = "STARTA INSPELNING";
   speechRecognition.stop();
   console.log("Recording stopped!");  
 }
 
 const setupEventListener = (document, speechRecognition) => {
-  let textArea = document.getElementById("textId");
-  textArea.onclick = () => {    
-    textArea.dataset.recording_started == "false" ? startRecording(document, speechRecognition) : stopRecording(document, speechRecognition);          
+  let rec = document.getElementById("recId");
+  rec.onclick = () => {    
+    rec.dataset.recording_started == "false" ? startRecording(document, speechRecognition) : stopRecording(document, speechRecognition);
   }
 }
 
 const setupView = (document) => {
-  let style = 'height: 80%;padding: 10px; padding-top: 20px;';
-  style +=    'font-family: Helvetica, Arial, sans-serif; font-size: 40px; font-style: normal; font-variant: normal; font-weight: 200; line-height: 60px;';
+  let style = 'height: 450px;margin: 10px;';
+  style +=    'font-family: Helvetica, Arial, sans-serif; font-size: 60px; font-style: bold; font-variant: normal; font-weight: 200; line-height: 60px;';
   style +=    'border-width: 1px; border-style: solid; border-color: #E5E5E5; border-radius: 12px;';
 
-  let text = "";     
-  text += '<div class="container-fluid" style="padding-top: 10%;padding-left: 10%;padding-right: 10%;">';         
-  text += '   <div class="row">';          
-  text += '       <div id="textId" data-recording_started="false" style="'+ style + '">Tryck här för att starta "text till tal"</div>';
-  text += '   </div>'; 
+  let text = "";       
+  text += '<div class="d-grid gap-2">';           
+  text += '   <div id="textId" style="'+ style + '"></div>';
+  text += '   <button id="recId" class="btn btn-light" type="button" data-recording_started="false" style="margin: 12px;">STARTA INSPELNING</button>'; 
   text += '</div>'; 
-    
+
   document.getElementById("centerId").innerHTML = text;    
 }
 
