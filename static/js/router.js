@@ -1,4 +1,5 @@
 import { initAbout } from "./about_mvc.js";      
+import { initFourInARow } from "./four_in_a_row_mvc.js";
 import { initHome } from "./home_mvc.js";      
 import { initKnowledgeBase } from "./knowledge_base_mvc.js";
 import { initSnake } from "./snake_mvc.js";   
@@ -11,9 +12,10 @@ const ROUTES = {
     "KNOWLEDGE_BASE": 1,
     "HOME": 2,
     "YASNAKE": 3,
-    "SPELLING_ALPHABETH": 4,
-    "SPEECH_TO_TEXT": 5,
-    "TIME": 6
+    "FOUR_IN_A_ROW":4,
+    "SPELLING_ALPHABETH": 5,
+    "SPEECH_TO_TEXT": 6,
+    "TIME": 7
 };
 
 const route = (document, newRoute) => {    
@@ -21,6 +23,7 @@ const route = (document, newRoute) => {
     
     switch (newRoute) {
         case ROUTES.ABOUT: initAbout(document); break;
+        case ROUTES.FOUR_IN_A_ROW: initFourInARow(document); break;
         case ROUTES.HOME: initHome(document); break;
         case ROUTES.KNOWLEDGE_BASE: initKnowledgeBase(document); break;
         case ROUTES.YASNAKE: initSnake(window, document); break;
@@ -33,7 +36,7 @@ const route = (document, newRoute) => {
 
 const initEventhandlers = (document) => {
     for (const key in ROUTES) {
-        let id = key+ "_ID";
+        let id = key + "_ID";
         let newRoute = ROUTES[key];
         document.getElementById(id).addEventListener("click", (event) => {                
             route(document, newRoute);
