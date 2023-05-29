@@ -66,6 +66,7 @@ CVE,Common Vulnerabilities and Exposures ,A dictionary of vulnerabilities and ex
 CVSS,Common Vulnerability Scoring System,Common Vulnerability Scoring System - An industry standard used to convey information about the severity of vulnerabilities.,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 CWE,Common Weakness Enumeration,A specification developed and maintained by MITRE to identify the root cause (weaknesses) of security vulnerabilities. You can obtain the list of CWEs from cwe.mitre.org. ,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 CWESS,Common Weakness Scoring System,A specification developed and maintained by MITRE to provide a way to prioritize software weaknesses that can introduce security vulnerabilities. You can obtain the list of CWSS from cwe.mitre.org/cwss. ,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+CYA,Cover Your Ass,"Cover your ass" refers to a tactic used by workers and organizations to share or divert blame or provide a disclaimer should something go wrong.,https://www.investopedia.com/terms/c/cover-your-ass.asp,2023-05-29T07:51:25Z,GW,2023-05-29T07:41:25Z,GW
 CYBOX,Cyber Observable eXpression ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 DA,Destination Address,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 DAC,Discretionary Access Control,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
