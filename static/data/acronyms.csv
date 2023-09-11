@@ -41,6 +41,7 @@ CIDR,Classless Internet Domain Routing,A method for allocating IP addresses and 
 CIO,Chief Information Officer,"Chief information officer (CIO), chief digital information officer (CDIO) or information technology (IT) director, is a job title commonly given to the most senior executive in an enterprise who works with information technology and computer systems, in order to support enterprise goals.",https://en.wikipedia.org/wiki/Chief_information_officer,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 CIS,Center for Internet Security ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 CISE,Computer and Information Science and Engineering,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+CISO,Chief Information Security Oficer,"A chief information security officer (CISO) is a senior-level executive within an organization responsible for establishing and maintaining the enterprise vision, strategy, and program to ensure information assets and technologies are adequately protected.",https://en.wikipedia.org/wiki/Chief_information_security_officer,2023-09-11T11:41:25Z,GW,2023-09-11T11:41:25Z,GW
 CK,Cryptographic Key,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 CKM,Cryptographic Key Management,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 CKMS,Cryptographic Key Management System,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
@@ -331,10 +332,10 @@ TFTP,Trivial File Transfer Protocol,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:2
 TIP,Threat Intelligence Platform,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 TLD,Top Level Domain,"the TLD is the last part of a domain name, such as .com, .net, .org, a two letter country domain, or one of several other TLDs out there.",,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 TLS,Transport Layer Security,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
-TOCTOU,time-of-check to time-of-use, is a class of software bugs caused by a race condition involving the checking of the state of a part of a system (such as a security credential) and the use of the results of that check,https://en.wikipedia.org/wiki/Time-of-check_to_time-of-use,2023-04-06T11:121:00Z,GW,2023-04-06T11:121:00Z,GW
 TOCTOU ,Time-of-check to time-of-use, a class of software bugs caused by a race condition involving the checking of the state of a part of a system (such as a security credential) and the use of the results of that check,https://en.wikipedia.org/wiki/Time-of-check_to_time-of-use,2023-04-13T08:21:00Z,GW,2023-04-13T08:21:00Z,GW
 TOS,Type of Service ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 TPO,Trusted Post Office,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+TPM,Trusted Platform Module,"Trusted Platform Module (TPM, also known as ISO/IEC 11889) is an international standard for a secure cryptoprocessor, a dedicated microcontroller designed to secure hardware through integrated cryptographic keys. The term can also refer to a chip conforming to the standard.",https://en.wikipedia.org/wiki/Trusted_Platform_Module,2023-09-11T08:34:00Z,GW,2023-09-11T08:34:00Z,GW
 TQM,Total Quality Management ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 TTP,Trusted Third Party,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 TTP,"Tactics, Techniques, and Procedures ",,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
