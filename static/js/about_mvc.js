@@ -51,3 +51,4 @@ export function initAbout(document) {
   setupView(document);
   setupEventListener(document);  
 }
+
