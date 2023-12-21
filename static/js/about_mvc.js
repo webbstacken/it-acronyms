@@ -29,6 +29,7 @@ const addContent = async (document) => {
   text += '      <p class="lead">Deployd: ' + deployd + '</p>'
   text += '      <hr class="my-4">';
   // TODO https://wiki.creativecommons.org/wiki/best_practices_for_attribution
+  
   text += '      <p class="lead">Credits/licenses</p>';
   text += '      <a href="https://github.com/d3/d3/blob/main/LICENSE" class="nav-link">D3 js v7.8.2 Copyright 2010-2023 Mike Bostock</a>';
   text += '      <a href="https://github.com/twbs/bootstrap/blob/main/LICENSE" class="nav-link">Bootstrap v5.1.3</a>';                
