@@ -1,5 +1,11 @@
 # YAHP (Yet Another Home Page)
 
+## 2023-12
+
+### disconnected own domain from GitHub webpages
+
+### Changed start/default page to "Knowledge base"
+
 ## 2023-04
 
 ### "Speech to text"
