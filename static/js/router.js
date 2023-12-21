@@ -45,6 +45,6 @@ const initEventhandlers = (document) => {
 }
 
 export function initRouter(document ) {          
-    route(document, ROUTES.SPEECH_TO_TEXT);    
+    route(document, ROUTES.KNOWLEDGE_BASE);    
     initEventhandlers(document);    
 }
