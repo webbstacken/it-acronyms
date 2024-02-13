@@ -23,13 +23,13 @@ const route = (document, newRoute) => {
     
     switch (newRoute) {
         case ROUTES.ABOUT: initAbout(document); break;
-        case ROUTES.FOUR_IN_A_ROW: initFourInARow(document); break;
-        case ROUTES.HOME: initHome(document); break;
+        //case ROUTES.FOUR_IN_A_ROW: initFourInARow(document); break;
+        //case ROUTES.HOME: initHome(document); break;
         case ROUTES.KNOWLEDGE_BASE: initKnowledgeBase(document); break;
         case ROUTES.YASNAKE: initSnake(window, document); break;
         case ROUTES.SPELLING_ALPHABETH: initSpellingAlphabet(document); break;
-        case ROUTES.SPEECH_TO_TEXT: initSpeechToText(document); break;
-        case ROUTES.TIME: initTime(document); break;
+        //case ROUTES.SPEECH_TO_TEXT: initSpeechToText(document); break;
+        //case ROUTES.TIME: initTime(document); break;
         default: console.log("Unknown route: '" + newRoute + "'"); 
     }
 }
