@@ -10,12 +10,12 @@ import { initTime } from "./time_mvc.js";
 const ROUTES = {
     "ABOUT": 0,
     "KNOWLEDGE_BASE": 1,
-    "HOME": 2,
+    //"HOME": 2,
     "YASNAKE": 3,
-    "FOUR_IN_A_ROW":4,
+    //"FOUR_IN_A_ROW":4,
     "SPELLING_ALPHABETH": 5,
-    "SPEECH_TO_TEXT": 6,
-    "TIME": 7
+    //"SPEECH_TO_TEXT": 6,
+    //"TIME": 7
 };
 
 const route = (document, newRoute) => {    
