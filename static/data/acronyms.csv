@@ -229,64 +229,121 @@ OMB,Office of Management and Budget,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:2
 OPC,Open Compute Project,,https://www.opencompute.org/,2023-01-19T14:35:00Z,GW,2023-01-19T14:35:00Z,GW
 OPEX,Operaional Expenditure,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 OS,Operating System,"An operating system (OS) is system software that manages computer hardware and software resources, and provides common services for computer programs.",https://en.wikipedia.org/wiki/Operating_system,2023-03-09T09:35:00Z,GW,2023-03-09T09:35:00Z,GW
-OSI,Open System Interconnection (OSI) Reference Model,"{ ""osi_layer"": [
-{
-  ""layer"": 7,
-  ""name"": ""Application"",
-  ""pdu"" : ""Data"",
-  ""device"": [""Network apps""],
-  ""protocol"": [""HTTPS"", ""SMTP"", ""FTP"", ""DNS"", ""...""],
-  ""function"": ""Protocols for resource sharing or remote file execution""
-},
-{
-  ""layer"": 6,
-  ""name"": ""Presentation"",
-  ""pdu"" : ""Data"",
-  ""device"": [""-""],
-  ""protocol"": [""SSL"", ""MIME"", ""TLS"", ""JPG"", ""...""],
-  ""function"": ""Translation of data between a networking service and appalication character encoding, data compression, encrypt/decryption""
-},
-{
-  ""layer"": 5,
-  ""name"": ""Session"",
-  ""pdu"" : ""Data"",
-  ""device"": [""-""],
-  ""protocol"": [""NetBIOS"", ""PPTP"", ""...""],
-  ""function"": ""Establish, manage and terminate session, API, sockets, Authentication, Authorization and session managment.""
-},
-{
-  ""layer"": 4,
-  ""name"": ""Transport"",
-  ""pdu"" : ""Segment|Datagram"",
-  ""device"": [""-""],
-  ""protocol"": [""TCP"", ""UDP""],
-  ""function"": ""Reliabale connection oritented/less transmission of data segments/datagram between points on a network.""
-},
-{
-  ""layer"": 3,
-  ""name"": ""Network"",
-  ""pdu"" : ""Packet"",
-  ""device"": [""Router"", ""L3 Switch""],
-  ""protocol"": [""IPv4"", ""IPv6"", ""IPX"", ""ICMP"", ""ARP""],
-  ""function"": ""TBD""
-},
-{
-  ""layer"": 2,
-  ""name"": ""Data link"",
-  ""pdu"" : ""Frame"",
-  ""device"": [""L2 Switch"", ”Bridge”],
-  ""protocol"": [""802.1q/x"", ""CSMA"", ""Ethernet"", ""MAC""],
-  ""function"": ""Transmission of data frames between two nodes connected by a physical layer.""
-},
-{
-  ""layer"": 1,
-  ""name"": ""Physical"",
-  ""pdu"" : ""Bits"",
-  ""device"": [""Hub"", ""Repeater"", ""Cable"", ""Fiber"", ""NIC"", ""Modem""],
-  ""protocol"": [""Ethernet"", ""USB"", ""Bluetooth"", ""802.11""],
-  ""function"": ""Transmisson and reception of raw bit stream over a physikal medium.""
-}
-]
+OSI,Open System Interconnection (OSI) Reference Model,"{
+  ""osi_layer"": [
+    {
+      ""layer"": 7,
+      ""name"": ""Application"",
+      ""pdu"": ""Data"",
+      ""device"": [
+        ""Network apps""
+      ],
+      ""protocol"": [
+        ""HTTPS"",
+        ""SMTP"",
+        ""FTP"",
+        ""DNS"",
+        ""...""
+      ],
+      ""function"": ""Protocols for resource sharing or remote file execution""
+    },
+    {
+      ""layer"": 6,
+      ""name"": ""Presentation"",
+      ""pdu"": ""Data"",
+      ""device"": [
+        ""-""
+      ],
+      ""protocol"": [
+        ""SSL"",
+        ""MIME"",
+        ""TLS"",
+        ""JPG"",
+        ""...""
+      ],
+      ""function"": ""Translation of data between a networking service and appalication character encoding, data compression, encrypt/decryption""
+    },
+    {
+      ""layer"": 5,
+      ""name"": ""Session"",
+      ""pdu"": ""Data"",
+      ""device"": [
+        ""-""
+      ],
+      ""protocol"": [
+        ""NetBIOS"",
+        ""PPTP"",
+        ""...""
+      ],
+      ""function"": ""Establish, manage and terminate session, API, sockets, Authentication, Authorization and session managment.""
+    },
+    {
+      ""layer"": 4,
+      ""name"": ""Transport"",
+      ""pdu"": ""Segment|Datagram"",
+      ""device"": [
+        ""-""
+      ],
+      ""protocol"": [
+        ""TCP"",
+        ""UDP""
+      ],
+      ""function"": ""Reliabale connection oritented/less transmission of data segments/datagram between points on a network.""
+    },
+    {
+      ""layer"": 3,
+      ""name"": ""Network"",
+      ""pdu"": ""Packet"",
+      ""device"": [
+        ""Router"",
+        ""L3 Switch""
+      ],
+      ""protocol"": [
+        ""IPv4"",
+        ""IPv6"",
+        ""IPX"",
+        ""ICMP"",
+        ""ARP""
+      ],
+      ""function"": ""TBD""
+    },
+    {
+      ""layer"": 2,
+      ""name"": ""Data link"",
+      ""pdu"": ""Frame"",
+      ""device"": [
+        ""L2 Switch"",
+        ""Bridge""
+      ],
+      ""protocol"": [
+        ""802.1q/x"",
+        ""CSMA"",
+        ""Ethernet"",
+        ""MAC""
+      ],
+      ""function"": ""Transmission of data frames between two nodes connected by a physical layer.""
+    },
+    {
+      ""layer"": 1,
+      ""name"": ""Physical"",
+      ""pdu"": ""Bits"",
+      ""device"": [
+        ""Hub"",
+        ""Repeater"",
+        ""Cable"",
+        ""Fiber"",
+        ""NIC"",
+        ""Modem""
+      ],
+      ""protocol"": [
+        ""Ethernet"",
+        ""USB"",
+        ""Bluetooth"",
+        ""802.11""
+      ],
+      ""function"": ""Transmisson and reception of raw bit stream over a physikal medium.""
+    }
+  ]
 }",https://en.wikipedia.org/wiki/OSI_model,2022-12-15T11:41:25Z,GW,2024-02-13T10:41:00Z,GW
 OSINT ,Open-source intelligence,is the collection and analysis of data gathered from open sources (covert and publicly available sources) to produce actionable intelligence.,https://en.wikipedia.org/wiki/Open-source_intelligence,2023-04-06T11:12:00Z,GW,2023-04-06T11:12:00Z,GW
 OSPF,Open Shortest Path First,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW

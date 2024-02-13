@@ -1,0 +1,116 @@
+{
+  "osi_layer": [
+    {
+      "layer": 7,
+      "name": "Application",
+      "pdu": "Data",
+      "device": [
+        "Network apps"
+      ],
+      "protocol": [
+        "HTTPS",
+        "SMTP",
+        "FTP",
+        "DNS",
+        "..."
+      ],
+      "function": "Protocols for resource sharing or remote file execution"
+    },
+    {
+      "layer": 6,
+      "name": "Presentation",
+      "pdu": "Data",
+      "device": [
+        "-"
+      ],
+      "protocol": [
+        "SSL",
+        "MIME",
+        "TLS",
+        "JPG",
+        "..."
+      ],
+      "function": "Translation of data between a networking service and appalication character encoding, data compression, encrypt/decryption"
+    },
+    {
+      "layer": 5,
+      "name": "Session",
+      "pdu": "Data",
+      "device": [
+        "-"
+      ],
+      "protocol": [
+        "NetBIOS",
+        "PPTP",
+        "..."
+      ],
+      "function": "Establish, manage and terminate session, API, sockets, Authentication, Authorization and session managment."
+    },
+    {
+      "layer": 4,
+      "name": "Transport",
+      "pdu": "Segment|Datagram",
+      "device": [
+        "-"
+      ],
+      "protocol": [
+        "TCP",
+        "UDP"
+      ],
+      "function": "Reliabale connection oritented/less transmission of data segments/datagram between points on a network."
+    },
+    {
+      "layer": 3,
+      "name": "Network",
+      "pdu": "Packet",
+      "device": [
+        "Router",
+        "L3 Switch"
+      ],
+      "protocol": [
+        "IPv4",
+        "IPv6",
+        "IPX",
+        "ICMP",
+        "ARP"
+      ],
+      "function": "TBD"
+    },
+    {
+      "layer": 2,
+      "name": "Data link",
+      "pdu": "Frame",
+      "device": [
+        "L2 Switch",
+        "Bridge"
+      ],
+      "protocol": [
+        "802.1q/x",
+        "CSMA",
+        "Ethernet",
+        "MAC"
+      ],
+      "function": "Transmission of data frames between two nodes connected by a physical layer."
+    },
+    {
+      "layer": 1,
+      "name": "Physical",
+      "pdu": "Bits",
+      "device": [
+        "Hub",
+        "Repeater",
+        "Cable",
+        "Fiber",
+        "NIC",
+        "Modem"
+      ],
+      "protocol": [
+        "Ethernet",
+        "USB",
+        "Bluetooth",
+        "802.11"
+      ],
+      "function": "Transmisson and reception of raw bit stream over a physikal medium."
+    }
+  ]
+}
