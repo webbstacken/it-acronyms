@@ -1,5 +1,12 @@
 Acronym,Definition,Comment,Link,CreatedAt,CreatedBy,UpdatedAt,UpdatedBy
+9,Availability: 90% (one nine),Downtime per year: ~36.53 [days],https://en.wikipedia.org/wiki/High_availability,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+99,Availability: 99% (two nines),Downtime per year:  ~3.65 [days],https://en.wikipedia.org/wiki/High_availability,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
 321,3-2-1 rule,"The 3-2-1 rule says there should be at least three copies or versions of data stored on two different pieces of media, one of which is off-site",https://www.thebroadcastbridge.com/content/entry/13084/protect-your-data-with-a-b-c-and-3-2-1,2023-01-19T14:35:00Z,GW,2023-01-19T14:35:00Z,GW
+999,Availability: 99.9% (three nines),Downtime per year:  ~8.77 [hours],https://en.wikipedia.org/wiki/High_availability,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+9999,Availability: 99.99% (four nines),Downtime per year: ~52.60 [minutes],https://en.wikipedia.org/wiki/High_availability,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+99999,Availability: 99.999% (five nines),Downtime per year: ~5.26 [minutes],https://en.wikipedia.org/wiki/High_availability,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+999999,Availability: 99.9999% (six nines),Downtime per year: ~31.56 [seconds],https://en.wikipedia.org/wiki/High_availability,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+9999999,Availability: 99.99999% (seven nines),Downtime per year: ~3.16 [seconds],https://en.wikipedia.org/wiki/High_availability,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
 2FA,Two-Factor Authentication ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 AAA,Authentication Authorization Accounting/Auditing,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 AAAA,Administration Authentication Authorization Auditing,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
@@ -34,7 +41,7 @@ CAL,Client Access Licenses,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 CDN,Content Delivery Manager,A content delivery network (CDN) refers to a geographically distributed group of servers which work together to provide fast delivery of Internet content. ,https://www.cloudflare.com/learning/cdn/what-is-a-cdn/,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 CDSA,Common Data Security Architecture,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 CHACHA20 ,,Stream cipher ,,2023-04-13T08:21:00Z,GW,2023-04-13T08:21:00Z,GW
-CHATGPT,ChatGPT,an artificial-intelligence (AI) chatbot developed by OpenAI and launched in November 2022,https://en.wikipedia.org/wiki/ChatGPT,2023-04-06T11:121:00Z,GW,2023-04-06T11:121:00Z,GW
+CHATGPT,ChatGPT,an artificial-intelligence (AI) chatbot developed by OpenAI and launched in November 2022,https://en.wikipedia.org/wiki/ChatGPT,2023-04-06T11:12:00Z,GW,2023-04-06T11:12:00Z,GW
 CHUID,Card Holder Unique Identifier,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 CIA,Confidentiality Integrity Availability,"Confidentiality assurance, Integrity assurance, Availability",,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 CIDR,Classless Internet Domain Routing,A method for allocating IP addresses and for IP routing.,https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
@@ -60,14 +67,14 @@ CSP,Cloud Service Provider,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 CSPRNG,Cryptographically Secure Pseudorandom Number Generator ,A cryptographically secure pseudorandom number generator (CSPRNG) or cryptographic pseudorandom number generator (CPRNG) is a pseudorandom number generator (PRNG) with properties that make it suitable for use in cryptography.,https://en.wikipedia.org/wiki/Cryptographically_secure_pseudorandom_number_generator,2023-04-13T08:21:00Z,GW,2023-04-13T08:21:00Z,GW
 CSRF,Cross-site request forgery,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 CT,Computed Tomography,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
-CTF,Capture the Flag ,"an exercise in which ""flags"" are secretly hidden in purposefully-vulnerable programs or websites ",,2023-04-06T11:121:00Z,GW,2023-04-06T11:121:00Z,GW
+CTF,Capture the Flag ,"an exercise in which ""flags"" are secretly hidden in purposefully-vulnerable programs or websites ",,2023-04-06T11:12:00Z,GW,2023-04-06T11:12:00Z,GW
 CTI,Cyber Threat Intelligence ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 CTS,Clear To Send,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 CVE,Common Vulnerabilities and Exposures ,A dictionary of vulnerabilities and exposures in products and systems maintained by MITRE. A CVE-ID is the industry standard method to identify vulnerabilities.,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 CVSS,Common Vulnerability Scoring System,Common Vulnerability Scoring System - An industry standard used to convey information about the severity of vulnerabilities.,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 CWE,Common Weakness Enumeration,A specification developed and maintained by MITRE to identify the root cause (weaknesses) of security vulnerabilities. You can obtain the list of CWEs from cwe.mitre.org. ,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 CWESS,Common Weakness Scoring System,A specification developed and maintained by MITRE to provide a way to prioritize software weaknesses that can introduce security vulnerabilities. You can obtain the list of CWSS from cwe.mitre.org/cwss. ,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
-CYA,Cover Your Ass,"Cover your ass" refers to a tactic used by workers and organizations to share or divert blame or provide a disclaimer should something go wrong.,https://www.investopedia.com/terms/c/cover-your-ass.asp,2023-05-29T07:51:25Z,GW,2023-05-29T07:41:25Z,GW
+CYA,Cover Your Ass,"""Cover your ass"" refers to a tactic used by workers and organizations to share or divert blame or provide a disclaimer should something go wrong.",https://www.investopedia.com/terms/c/cover-your-ass.asp,2023-05-29T07:51:25Z,GW,2023-05-29T07:41:25Z,GW
 CYBOX,Cyber Observable eXpression ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 DA,Destination Address,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 DAC,Discretionary Access Control,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
@@ -112,7 +119,7 @@ GDOI,Group Domain of Interpretation,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:2
 GDPR,General Data Protection Regulation ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 GID,Group ID,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 GKM,Group Key Management,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
-GPT,Generative pre-trained transformers,a family of large language models (LLMs) introduced by the American artificial intelligence organization OpenAI in 2018,https://en.wikipedia.org/wiki/Generative_pre-trained_transformer,2023-04-06T11:121:00Z,GW,2023-04-06T11:121:00Z,GW
+GPT,Generative pre-trained transformers,a family of large language models (LLMs) introduced by the American artificial intelligence organization OpenAI in 2018,https://en.wikipedia.org/wiki/Generative_pre-trained_transformer,2023-04-06T11:12:00Z,GW,2023-04-06T11:12:00Z,GW
 GRE,Generic Routing Encapsulation,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 GTLD,generic Top Level Domains,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 GUI,Graphical User Interface,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
@@ -208,7 +215,7 @@ NIC,Network Interface Controller,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,
 NIDS,Network Intrusion Detection System ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 NIST,National Institute of Standards and Technology ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 NMS,Network Management System ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
-NONCE,nonce, a nonce is an arbitrary number that can be used just once in a cryptographic communication,https://en.wikipedia.org/wiki/Cryptographic_nonce,2023-04-06T11:121:00Z,GW,2023-04-06T11:121:00Z,GW
+NONCE,nonce, a nonce is an arbitrary number that can be used just once in a cryptographic communication,https://en.wikipedia.org/wiki/Cryptographic_nonce,2023-04-06T11:12:00Z,GW,2023-04-06T11:12:00Z,GW
 NSA,National Security Agency ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 NSF, National Science Foundation,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 NSM,Network Security Monitoring ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
@@ -222,14 +229,14 @@ OMB,Office of Management and Budget,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:2
 OPC,Open Compute Project,,https://www.opencompute.org/,2023-01-19T14:35:00Z,GW,2023-01-19T14:35:00Z,GW
 OPEX,Operaional Expenditure,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 OS,Operating System,"An operating system (OS) is system software that manages computer hardware and software resources, and provides common services for computer programs.",https://en.wikipedia.org/wiki/Operating_system,2023-03-09T09:35:00Z,GW,2023-03-09T09:35:00Z,GW
-OSI,Open System Interconnection (OSI) Reference Model,"7	Application
-6	Presentation 
-5	Session
-4	Transport
-3	Network
-2	Data link
-1	Physical",https://en.wikipedia.org/wiki/OSI_model,2022-12-15T11:41:25Z,GW,2023-04-13T08:32:00Z,GW
-OSINT ,Open-source intelligence,is the collection and analysis of data gathered from open sources (covert and publicly available sources) to produce actionable intelligence.,https://en.wikipedia.org/wiki/Open-source_intelligence,2023-04-06T11:121:00Z,GW,2023-04-06T11:121:00Z,GW
+OSI,Open System Interconnection (OSI) Reference Model,"7	Application : Data            : Network apps : HTTPS SMTP FTP DNS...
+6	Presentation: Data            : -            : SSL MIME TLS JPG
+5	Session     : Data            : -            : NetBIOS PPTP
+4	Transport   : Segment|Datagram: -            : TCP UDP
+3	Network     : Packet          : Router L3 SW : IPv4 IPv6 IPX ICMP ARP
+2	Data link   : Frame           : L2 SW Bridge : 802.1q/x CSMA Ethernet MAC
+1	Physical    : Bits            : Hub Cable NIC: Ethernet USB Bluetooth 802.11",https://en.wikipedia.org/wiki/OSI_model,2022-12-15T11:41:25Z,GW,2024-02-13T10:41:00Z,GW
+OSINT ,Open-source intelligence,is the collection and analysis of data gathered from open sources (covert and publicly available sources) to produce actionable intelligence.,https://en.wikipedia.org/wiki/Open-source_intelligence,2023-04-06T11:12:00Z,GW,2023-04-06T11:12:00Z,GW
 OSPF,Open Shortest Path First,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 OSSEC,Open Source HIDS SECurity ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 OT,Operational Technology,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
@@ -258,6 +265,48 @@ PKM,Public Key Management,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 PNAC,Port-based Network Access Control,IEEE 802.1X is an IEEE Standard for ,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 POK,Proof of knowledge,an interactive proof in which the prover succeeds in 'convincing' a verifier that the prover knows something ,https://en.wikipedia.org/wiki/Proof_of_knowledge,2023-04-13T08:21:00Z,GW,2023-04-13T08:21:00Z,GW
 POP3,Post Office Protocol version 3 ,"In computing, the Post Office Protocol (POP) is an application-layer Internet standard protocol used by e-mail clients to retrieve e-mail from a mail server. ",https://en.wikipedia.org/wiki/Post_Office_Protocol,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+PORT 10000,Webmin,Network Data Management Protocol,,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+PORT 10161,SNMP,Simple Network Management Protocol (SNMP) v3,,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+PORT 10162,SNMP,Simple Network Management Protocol (SNMP) v3,,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+PORT 110,POP3,Post Office Protocol version 3 (POP3),,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+PORT 123,NTP,Network Time Protocol (NTP),,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+PORT 139,NETBIOS,NetBIOS is a non-routable OSI Session Layer 5 Protocol,,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+PORT 143,IMAP,Internet Message Access Protocol (IMAP),,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+PORT 1433,,Microsoft SQL Server database management system server,,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+PORT 1434,,Microsoft SQL Server database management system monitor,,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+PORT 161,SNMP,Simple Network Management Protocol (SNMP),,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+PORT 162,SNMP,Simple Network Management Protocol (SNMP),,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+PORT 179,BGP,Border Gateway Protocol (BGP),,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+PORT 1812,RADIUS,RADIUS authentication traffic from Internet-based RADIUS clients to the NPS,,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+PORT 1813,RADIUS,RADIUS accounting traffic from Internet-based RADIUS clients to the NPS. ,,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+PORT 20,FTP,File Transfer Protocol (FTP),,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+PORT 2082,,cPanel,,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+PORT 2083,,Secure RADIUS Service (radsec),,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+PORT 21,FTP,File Transfer Protocol (FTP),,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+PORT 22,SSH,Secure Shell,,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+PORT 2222,DirectAdmin,EtherNet/IP implicit messaging for IO data,,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+PORT 23,Telnet,Telnet remote login service,,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+PORT 25,SMTP,Simple Mail Transfer Protocol,,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+PORT 3306,,MySQL database system,,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+PORT 3389,RDP,Microsoft Terminal Server (RDP) Remote Desktop Protocol (RDP),,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+PORT 389,LDAP,Lightweight Directory Access Protocol (LDAP) queries,,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+PORT 443,HTTPS,HTTP Secure (HTTPS),,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+PORT 445,SMB,Server Message Block (SMB),,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+PORT 465,SMTP,SMTP over implicit SSL (obsolete),,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+PORT 500,ISAKMP,Internet Security Association and Key Managment Protocol,,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+PORT 5060,SIP,Session Initiation Protocol (SIP),,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+PORT 5061,SIP,Session Initiation Protocol (SIP) over TLS,,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+PORT 514,UDP,Syslog,,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+PORT 53,DNS,Domain Name System (DNS),,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+PORT 59000,VNC,Virtual Network Computing (VNC),,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+PORT 636,LDAPS,Lightweight Directory Access Protocol over TLS/SSL,,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+PORT 67,DHCP,"Dynamic Host Configuration Protocol (DHCP), Server",,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+PORT 68,DHCP,"Dynamic Host Configuration Protocol (DHCP), Client",,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+PORT 69,TFTP,Trivial File Transfer Protocol,,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+PORT 80,HTTP,Hypertext Transfer Protocol (HTTP),,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+PORT 8080,HTTP,Alternative port for HTTP. See also ports 80 and 8008.,,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+PORT 8443,Plesk,"Apache Tomcat SSL,  Promise WebPAM SSL and more",,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
+PORT 993,IMAPS,Internet Message Access Protocol over TLS/SSL ,,2024-02-13T09:54:00Z,GW,2024-02-13T09:54:00Z,GW
 POS,Point of Sale,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 PPP,Point-to-Point ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 PRADS,Passive Real-time Asset Detection System ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
@@ -275,8 +324,8 @@ RF,Radio Frequencies,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 RFC,Request For Comment,"A Request for Comments (RFC) is a publication in a series from the principal technical development and standards-setting bodies for the Internet, most prominently the Internet Engineering Task Force (IETF).  ",https://en.wikipedia.org/wiki/Request_for_Comments,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 RFM,Risk Management Framework ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 RHEL,Red Hat Enterprise Linux,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
-RNG,Random number generation,,,2023-04-06T11:121:00Z,GW,2023-04-06T11:121:00Z,GW
-ROCA,Return of Coppersmith's attack,a cryptographic weakness that allows the private key of a key pair to be recovered from the public key in keys generated by devices with the vulnerability,https://en.wikipedia.org/wiki/ROCA_vulnerability,2023-04-06T11:121:00Z,GW,2023-04-06T11:121:00Z,GW
+RNG,Random number generation,,,2023-04-06T11:12:00Z,GW,2023-04-06T11:12:00Z,GW
+ROCA,Return of Coppersmith's attack,a cryptographic weakness that allows the private key of a key pair to be recovered from the public key in keys generated by devices with the vulnerability,https://en.wikipedia.org/wiki/ROCA_vulnerability,2023-04-06T11:12:00Z,GW,2023-04-06T11:12:00Z,GW
 ROE,Rules of Engagement (ROE),Detailed guidelines and constraints regarding the execution of information security testing.,https://csrc.nist.gov/glossary/term/rules_of_engagement,2024-02-12T10:46:00Z,GW,2024-02-12T10:46:00Z,GW
 RPM,Red Hat Package Manager ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 RR,Resource Record ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
@@ -336,8 +385,8 @@ TLD,Top Level Domain,"the TLD is the last part of a domain name, such as .com, .
 TLS,Transport Layer Security,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 TOCTOU ,Time-of-check to time-of-use, a class of software bugs caused by a race condition involving the checking of the state of a part of a system (such as a security credential) and the use of the results of that check,https://en.wikipedia.org/wiki/Time-of-check_to_time-of-use,2023-04-13T08:21:00Z,GW,2023-04-13T08:21:00Z,GW
 TOS,Type of Service ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
-TPO,Trusted Post Office,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 TPM,Trusted Platform Module,"Trusted Platform Module (TPM, also known as ISO/IEC 11889) is an international standard for a secure cryptoprocessor, a dedicated microcontroller designed to secure hardware through integrated cryptographic keys. The term can also refer to a chip conforming to the standard.",https://en.wikipedia.org/wiki/Trusted_Platform_Module,2023-09-11T08:34:00Z,GW,2023-09-11T08:34:00Z,GW
+TPO,Trusted Post Office,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 TQM,Total Quality Management ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 TTP,Trusted Third Party,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 TTP,"Tactics, Techniques, and Procedures ",,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
@@ -357,12 +406,12 @@ VNC,Virtual Network Computing,irtual Network Computing (VNC) is a graphical desk
 VOIP, Voice Over IP (Voice Over the Internet Protocol),,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 VPC,Virtual Private Cloud,"A virtual private cloud (VPC) is an on-demand configurable pool of shared resources allocated within a public cloud environment, providing a certain level of isolation between the different organizations (denoted as users hereafter) using the resources.  ",https://en.wikipedia.org/wiki/Virtual_private_cloud,2023-01-23T09:27:00Z,GW,2023-01-23T09:27:00Z,GW
 VPN,Virtual Private Network,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
-W3C,World Wide Web Consortium,The World Wide Web Consortium (W3C) is the main international standards organization for the World Wide Web.,https://en.wikipedia.org/wiki/World_Wide_Web_Consortium,2023-04-06T11:121:00Z,GW,2023-04-06T11:121:00Z,GW
+W3C,World Wide Web Consortium,The World Wide Web Consortium (W3C) is the main international standards organization for the World Wide Web.,https://en.wikipedia.org/wiki/World_Wide_Web_Consortium,2023-04-06T11:12:00Z,GW,2023-04-06T11:12:00Z,GW
 WAF,Web Application Firewall,"A web application firewall (WAF) is a specific form of application firewall that filters, monitors, and blocks HTTP traffic to and from a web service. ",https://en.wikipedia.org/wiki/Web_application_firewall,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 WAMP,"Windows, Apache, MySQL, PHP ",,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 WAN,Wide Area Network,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 WAP,Web Application Proxy,is a role service in Windows Server Remote Access,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
-WEBAUTHN,Web Authentication,a web standard published by the World Wide Web Consortium (W3C),https://en.wikipedia.org/wiki/WebAuthn,2023-04-06T11:121:00Z,GW,2023-04-06T11:121:00Z,GW
+WEBAUTHN,Web Authentication,a web standard published by the World Wide Web Consortium (W3C),https://en.wikipedia.org/wiki/WebAuthn,2023-04-06T11:12:00Z,GW,2023-04-06T11:12:00Z,GW
 WISA,"Windows, IIS, SQL, ASP.NET",,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 WLAN,Wireless Local Area Network ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 WLC,Wireless LAN Controller ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
