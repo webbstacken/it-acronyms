@@ -96,6 +96,9 @@ DOS,Denial of Service ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 DSL,Domain Specific Language ,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 DSRM,Directory Services Restore Password,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 DVR,digital video recorder,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+
+DREAD, Damage Reproducibility Exploitability Affected Users Discoverability,"Damage - How bad would an attack be? Reproducibility - How easy is it to reproduce the attack? Exploitability - How much work is it to launch the attack? Affected Users - How many people will be impacted? Discoverability - How easy is it to discover the vulnerability?",,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+
 EAC,Extended Access Control,"This protects the holder's privacy, including fingerprints that may be stored on the biometric chip.",,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 EAP,Extensible Access Protocol,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 ECDSA, Elliptic Curve Digital Signature Algorithm,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
