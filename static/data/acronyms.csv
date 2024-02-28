@@ -77,7 +77,7 @@ CWESS,Common Weakness Scoring System,"A specification developed and maintained b
 CYA,Cover Your Ass,"""Cover your ass"" refers to a tactic used by workers and organizations to share or divert blame or provide a disclaimer should something go wrong.",https://www.investopedia.com/terms/c/cover-your-ass.asp,2023-05-29T07:51:25Z,GW,2023-05-29T07:41:25Z,GW
 CYBOX,"Cyber Observable eXpression ",,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 DA,Destination Address,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
-DAC,Discretionary Access Control,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+DACL,Discretionary Access control,"In computer security, discretionary access control (DAC) is a type of access control defined by the Trusted Computer System Evaluation Criteria[1] (TCSEC) as a means of restricting access to objects based on the identity of subjects and/or groups to which they belong.",https://en.wikipedia.org/wiki/Discretionary_access_control,2024-02-27T11:41:25Z,GW,2024-02-27T11:41:25Z,GW
 DAR,Data-At-Rest,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 DBMS,DataBase Management System,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 DC,Data Center,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
