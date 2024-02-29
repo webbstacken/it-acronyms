@@ -14,7 +14,7 @@ ABAC,"Attribute-based access control ",,,2022-12-15T11:41:25Z,GW,2022-12-15T11:4
 ABC,"ABC rule, Archive Backup Cloning","A-B-C refers to Archive, Backup and Cloning, all of which are essential to cover all aspects of data protection and data preservation. ",https://www.thebroadcastbridge.com/content/entry/13084/protect-your-data-with-a-b-c-and-3-2-1,2023-01-19T14:35:00Z,GW,2023-01-19T14:35:00Z,GW
 ACE,Access Control Entries,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 ACL,"Access Control List ",,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
-AD,Active Directory,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+AD,Active Directory,"Active Directory is a directory service developed by Microsoft for Windows domain networks. It stores information about network objects such as computers, users, and groups. It provides authentication and authorisation services, and allows administrators to manage network resources centrally.",,2022-12-15T11:41:25Z,GW,2024-02-29T06:50:00Z,GW
 ADDS,Active Directory Domain Services,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 AES,"Advanced Encryption Standard ","The Advanced Encryption Standard (AES), also known by its original name Rijndael, is a specification for the encryption of electronic data established by the U.S. National Institute of Standards and Technology (NIST) in 2001",https://en.wikipedia.org/wiki/Advanced_Encryption_Standard,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 AKA,Also Known As,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
@@ -173,15 +173,16 @@ IXP,Internet Exchange Point,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 JBOD,Just a bunch of disks,,https://en.wikipedia.org/wiki/Non-RAID_drive_architectures,2023-01-19T14:35:00Z,GW,2023-01-19T14:35:00Z,GW
 JMS,Getting Started with Java Message Service,,https://www.oracle.com/technical-resources/articles/java/intro-java-message-service.html,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 KA,Knowledge Area,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
-KDC,Key Distribution Center,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+KDC,Key Distribution Center,"In cryptography, a key distribution center (KDC) is part of a cryptosystem intended to reduce the risks inherent in exchanging keys.",https://en.wikipedia.org/wiki/Key_distribution_center,2022-12-15T11:41:25Z,GW,2024-02-29T08:00:00Z,GW
 KDF,Key derivation function,"a cryptographic algorithm that derives one or more secret keys from a secret value such as a master key, a password, or a passphrase using a pseudorandom function (which typically uses a cryptographic hash function or block cipher)",https://en.wikipedia.org/wiki/Key_derivation_function,2023-04-13T08:21:00Z,GW,2023-04-13T08:21:00Z,GW
+KERBEROS,"Kerberos ",Kerberos (/ˈkɜːrbərɒs/) is a computer-network authentication protocol that works on the basis of tickets to allow nodes communicating over a non-secure network to prove their identity to one another in a secure manner.,https://en.wikipedia.org/wiki/Kerberos_(protocol),2024-02-29T08:00:00Z,GW,2024-02-29T08:00:00Z,GW
 KM,Key Management,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 KMS,Key Management System,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 KPI,Key Performance Indicators,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 LAMP,"Linux, Apache, MySQL, PHP/Perl/Python ",,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 LAN,Local Area Network,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 LBM,"Load Balancing Manager ",,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
-LDAP,"Lightweight Directory Access Protocol ",,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+LDAP,"Lightweight Directory Access Protocol ","The Lightweight Directory Access Protocol (LDAP /ˈɛldæp/) is an open, vendor-neutral, industry standard application protocol for accessing and maintaining distributed directory information services over an Internet Protocol (IP) network.",https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol,2022-12-15T11:41:25Z,GW,2024-02-29T09:06:00Z,GW
 LLC,"Logical Link Control ",,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 LSASS,"Local Security Authority Subsystem Service ",,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 LSU,Link State Update,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
@@ -350,6 +351,7 @@ OSI,Open System Interconnection (OSI) Reference Model,"{
 OSPF,Open Shortest Path First,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 OSSEC,"Open Source HIDS SECurity ",,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 OT,Operational Technology,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+OU,Organizational Unit,"In computing, an organizational unit (OU) provides a way of classifying objects located in directories, or names in a digital certificate hierarchy, typically used either to differentiate between objects with the same name (John Doe in OU ""marketing"" versus John Doe in OU ""customer service""), or to parcel out authority to create and manage objects (for example: to give rights for user-creation to local technicians instead of having to manage all accounts from a single central group).",https://en.wikipedia.org/wiki/Organizational_unit_(computing),2024-02-29T08:00:00Z,GW,2024-02-29T08:00:00Z,GW
 OWASP,Open Web Application Security Project,,https://owasp.org,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 PAAS,Platform as a Service,"Platform as a service (PaaS) or application platform as a service (aPaaS) or platform-based service is a category of cloud computing services that allows customers to provision, instantiate, run, and manage a modular bundle comprising a computing platform and one or more applications, ",https://en.wikipedia.org/wiki/Platform_as_a_service,2022-12-15T11:41:25Z,GW,2023-01-19T14:35:00Z,GW
 PABP,Payment Application Best Practices,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
