@@ -223,6 +223,7 @@ NSF," National Science Foundation",,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25
 NSM,"Network Security Monitoring ",,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 NTLM,New Technology LAN Manager,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 NTP,Network Time Protocol,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+NVD,NATIONAL VULNERABILITY DATABASE,"""The National Vulnerability Database (NVD) is the U.S. government repository of standards-based vulnerability management data represented using the Security Content Automation Protocol (SCAP). This data enables automation of vulnerability management, security measurement, and compliance. NVD includes databases of security checklists, security related software flaws, misconfigurations, product names, and impact metrics. NVD supports the Information Security Automation Program (ISAP).""",https://en.wikipedia.org/wiki/National_Vulnerability_Database,2024-03-01T09:23:00Z,GW,2024-03-01T09:23:00Z,GW
 OASIS,Organization for the Advancement of Structured Information Standards,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 OCSP,Online Certificate Status Protocol,The Online Certificate Status Protocol (OCSP) is an Internet protocol used for obtaining the revocation status of an X.509 digital certificate.,https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 ODM,Original Design Manufacturing,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
