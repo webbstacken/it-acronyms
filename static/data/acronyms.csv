@@ -195,6 +195,7 @@ MAM,Mobile Application Management,(MAM) to control corporate-owned software,,202
 MAMP,"macOS, Apache, MySQL, PHP",,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 MCU,Microcontroller Unit,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 MDM,"Mobile Device Management ",MDM to manage corporate-owned devices,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+MDT,Microsoft Deployment Toolkit,"""MDT can help build an automated installation source for deploying Windows operating systems from Windows 7, Windows 10 and Windows Server 2008 onwards, from either a single machine or a central server distribution tool, such as Windows Deployment Services (WDS) or System Center Configuration Manager (SCCM).""",https://en.wikipedia.org/wiki/Microsoft_Deployment_Toolkit,2024-03-03T08:00:00Z,GW,2024-03-03T08:00:00Z,GW
 MEAN,"MongoDB, Express.js, AngularJS(or Angular), and Node.js ",,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 MFA,Multifactor Authentication,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 MIB,Management Information Base,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
