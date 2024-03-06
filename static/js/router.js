@@ -1,4 +1,5 @@
 import { initAbout } from "./about_mvc.js";      
+import { initCreditsLicenses } from "./credits_licenses.js";      
 import { initFourInARow } from "./four_in_a_row_mvc.js";
 import { initHome } from "./home_mvc.js";      
 import { initKnowledgeBase } from "./knowledge_base_mvc.js";
@@ -7,6 +8,7 @@ import { initSpellingAlphabet } from "./spelling_alphabet_mvc.js";
 import { initSpeechToText } from "./speech_to_text_mvc.js";
 import { initTime } from "./time_mvc.js"; 
 
+//initCreditsLicenses
 const ROUTES = {
     "ABOUT": 0,
     "KNOWLEDGE_BASE": 1,
@@ -15,7 +17,8 @@ const ROUTES = {
     //"FOUR_IN_A_ROW":4,
     "SPELLING_ALPHABETH": 5,
     //"SPEECH_TO_TEXT": 6,
-    //"TIME": 7
+    //"TIME": 7,
+    "CREDITS_LICENSES": 8,
 };
 
 const route = (document, newRoute) => {    
@@ -30,6 +33,7 @@ const route = (document, newRoute) => {
         case ROUTES.SPELLING_ALPHABETH: initSpellingAlphabet(document); break;
         //case ROUTES.SPEECH_TO_TEXT: initSpeechToText(document); break;
         //case ROUTES.TIME: initTime(document); break;
+        case ROUTES.CREDITS_LICENSES: initCreditsLicenses(document); break;        
         default: console.log("Unknown route: '" + newRoute + "'"); 
     }
 }

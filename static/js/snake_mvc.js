@@ -171,7 +171,8 @@ const addView = (document) => {
   text += '  <div class="row">';
 
   text += '    <div class="col-md-12">';
-  text += '      <p id="' + SCOREBOARD_ID + '">Highscore: 0 Score: 0</p>';  
+  text += '      <p id="' + SCOREBOARD_ID + '">Highscore: 0 Score: 0</p>';
+  text += '      <p>Right and left mouse click also controls the snake movement...</p>';
   text += '    </div>';
     
   text += '    <div class="col-md-12">';  

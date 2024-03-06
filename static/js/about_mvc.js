@@ -18,22 +18,28 @@ const updateVersion = async () => {
 
 const addContent = async (document) => {
   await updateVersion();    
-  const date = new Date(parseInt(version.split(".")[2]) * 1000);
-  const deployd = date.toISOString();
+  const date = new Date(parseInt(version.split(".")[2]) * 1000);  
+  const deployd = date.toISOString().split('.')[0] + "Z";
 
   let text = document.getElementById("centerId").innerHTML;  
   text += '<div class="jumbotron jumbotron-fluid">';        
-  text += '  <div class="container">';
-  text += '    <h1 class="display-4">About...</h1>';
-  text += '      <p class="lead">Version: ' + version + '</p>'
-  text += '      <p class="lead">Deployd: ' + deployd + '</p>'
-  text += '      <hr class="my-4">';
-  // TODO https://wiki.creativecommons.org/wiki/best_practices_for_attribution
-  
-  text += '      <p class="lead">Credits/licenses</p>';
-  text += '      <a href="https://github.com/d3/d3/blob/main/LICENSE" class="nav-link">D3 js v7.8.2 Copyright 2010-2023 Mike Bostock</a>';
-  text += '      <a href="https://github.com/twbs/bootstrap/blob/main/LICENSE" class="nav-link">Bootstrap v5.1.3</a>';                
-  text += '    </div>';
+  text += '  <div class="container">';      
+  text += '      <code class="lead text-secondary">YASWS (Yet Another Static Web Site) © 2022, 2023, 2024</code></br>';
+  text += '      <code class="text-secondary">I created this site partly for fun and to practice building a static website from scratch (with the exception of D3 and Bootstrap :-). Additionally, I hope that others might find it useful. Note: This text was co-written by an AI.</code></br>';
+  text += '      </br>';
+
+  text += '      <code class="lead text-secondary">Version</code></br>';
+  text += '      <code class="text-secondary">' + version + '</code></br>';
+  text += '      </br>';
+
+  text += '      <code class="lead text-secondary">Last updated (UTC ISO8601)</code></br>';
+  text += '      <code class="text-secondary">' + deployd + '</code></br>';
+  text += '      </br>';
+
+  text += '      <code class="lead text-secondary">Developer<code></br>';  
+  text += '      <code class="text-secondary">Glenn Wadstedt</code></br>';  
+  text += '      </br>';
+
   text += '  </div>';
   text += '</div>';  
   document.getElementById("centerId").innerHTML = text;
@@ -47,8 +53,7 @@ const setupEventListener = (document) => {
   // TODO 
 }
 
-export function initAbout(document) {
-  //updateVersion();  
+export function initAbout(document) {  
   setupView(document);
   setupEventListener(document);  
 }
