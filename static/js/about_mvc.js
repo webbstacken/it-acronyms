@@ -24,8 +24,8 @@ const addContent = async (document) => {
   let text = document.getElementById("centerId").innerHTML;  
   text += '<div class="jumbotron jumbotron-fluid">';        
   text += '  <div class="container">';      
-  text += '      <code class="lead text-secondary">YASWS (Yet Another Static Web Site) © 2022, 2023, 2024</code></br>';
-  text += '      <code class="text-secondary">I created this site partly for fun and to practice building a static website from scratch (with the exception of D3 and Bootstrap :-). Additionally, I hope that others might find it useful. Note: This text was co-written by an AI.</code></br>';
+  text += '      <code class="lead text-secondary">YASWS (Yet Another Static Web Site)</code></br>';
+  text += '      <code class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</code></br>';
   text += '      <a href="https://github.com/webbstacken/yasws">Link to GitHub repo</a></br>';
   text += '      </br>';
 
