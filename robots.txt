@@ -1,5 +1,2 @@
 User-agent: *
-Allow: /*.html$
-Disallow: /*/data/*
-Disallow: /*/static/*
-Disallow: /*/templates/*
+Allow: /

@@ -1,14 +1,13 @@
 import { initAbout } from "./about_mvc.js";      
 import { initCreditsLicenses } from "./credits_licenses.js";      
-import { initFourInARow } from "./four_in_a_row_mvc.js";
-import { initHome } from "./home_mvc.js";      
+//import { initFourInARow } from "./four_in_a_row_mvc.js";
+//import { initHome } from "./home_mvc.js";      
 import { initKnowledgeBase } from "./knowledge_base_mvc.js";
 import { initSnake } from "./snake_mvc.js";   
 import { initSpellingAlphabet } from "./spelling_alphabet_mvc.js"; 
-import { initSpeechToText } from "./speech_to_text_mvc.js";
-import { initTime } from "./time_mvc.js"; 
+//import { initSpeechToText } from "./speech_to_text_mvc.js";
+//import { initTime } from "./time_mvc.js"; 
 
-//initCreditsLicenses
 const ROUTES = {
     "ABOUT": 0,
     "KNOWLEDGE_BASE": 1,
