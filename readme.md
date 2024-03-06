@@ -1,4 +1,7 @@
-# YAHP (Yet Another Home Page)
+# YASWS (Yet Another Static Web Site)
+
+## 2024-03
+### Minor updates YAHP->YASWS, About page moved credits and licenses to own page
 
 ## 2023-12
 
