@@ -19,24 +19,25 @@ const updateVersion = async () => {
 const addContent = async (document) => {
   await updateVersion();    
   const date = new Date(parseInt(version.split(".")[2]) * 1000);  
-  const deployd = date.toISOString().split('.')[0] + "Z";
+  const updated = date.toISOString().split('.')[0] + "Z";
 
   let text = document.getElementById("centerId").innerHTML;  
   text += '<div class="jumbotron jumbotron-fluid">';        
   text += '  <div class="container">';      
   text += '      <code class="lead text-secondary">YASWS (Yet Another Static Web Site)</code></br>';
   text += '      <code class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</code></br>';
-  text += '      <a href="https://github.com/webbstacken/yasws">Link to GitHub repo</a></br>';
+  text += '      <a href="https://github.com/webbstacken/yasws">YASWS GitHub repo</a></br>';
   text += '      </br>';
-
+  
   text += '      <code class="lead text-secondary">Version</code></br>';
   text += '      <code class="text-secondary">' + version + '</code></br>';
   text += '      </br>';
-
-  text += '      <code class="lead text-secondary">Last updated (UTC ISO8601)</code></br>';
-  text += '      <code class="text-secondary">' + deployd + '</code></br>';
+ 
+  text += '      <code class="lead text-secondary">Updated';
+  text += '      <code class="text-secondary">' + updated + '</code></br>';
   text += '      </br>';
 
+  
   text += '      <code class="lead text-secondary">Developer<code></br>';  
   text += '      <code class="text-secondary">Glenn Wadstedt</code></br>';  
   text += '      </br>';
