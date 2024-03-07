@@ -33,7 +33,7 @@ const addContent = async (document) => {
   text += '      <code class="text-secondary">' + version + '</code></br>';
   text += '      </br>';
  
-  text += '      <code class="lead text-secondary">Updated';
+  text += '      <code class="lead text-secondary">Updated</code></br>';
   text += '      <code class="text-secondary">' + updated + '</code></br>';
   text += '      </br>';
 
