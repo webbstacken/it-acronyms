@@ -181,8 +181,9 @@ KMS,Key Management System,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 KPI,Key Performance Indicators,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 LAMP,"Linux, Apache, MySQL, PHP/Perl/Python ",,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 LAN,Local Area Network,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+LAPS,Local Administrator Password Solution,"""Windows Local Administrator Password Solution (Windows LAPS) is a Windows feature that automatically manages and backs up the password of a local administrator account on your Microsoft Entra joined or Windows Server Active Directory-joined devices.""",https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol,2024-03-08T06:05:00Z,GW,2024-03-08T06:05:00Z,GW
 LBM,"Load Balancing Manager ",,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
-LDAP,"Lightweight Directory Access Protocol ","""The Lightweight Directory Access Protocol (LDAP /ˈɛldæp/) is an open, vendor-neutral, industry standard application protocol for accessing and maintaining distributed directory information services over an Internet Protocol (IP) network.""",https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol,2022-12-15T11:41:25Z,GW,2024-02-29T09:06:00Z,GW
+LDAP,"Lightweight Directory Access Protocol ","""The Lightweight Directory Access Protocol (LDAP /ˈɛldæp/) is an open, vendor-neutral, industry standard application protocol for accessing and maintaining distributed directory information services over an Internet Protocol (IP) network.""",,2022-12-15T11:41:25Z,GW,2024-02-29T09:06:00Z,GW
 LLC,"Logical Link Control ",,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 LSASS,"Local Security Authority Subsystem Service ",""" Windows process that handles the operating system security policy and enforces it on a system. It verifies logged in accounts and ensures passwords, hashes, and Kerberos tickets. """,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 LSU,Link State Update,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
@@ -222,7 +223,7 @@ NONCE,nonce," a nonce is an arbitrary number that can be used just once in a cry
 NSA,"National Security Agency ",,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 NSF," National Science Foundation",,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 NSM,"Network Security Monitoring ",,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
-NTLM,New Technology LAN Manager,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+NTLM,New Technology LAN Manager,"""Windows New Technology LAN Manager (NTLM) is a suite of security protocols offered by Microsoft to authenticate users’ identity and protect the integrity and confidentiality of their activity.""",,2022-12-15T11:41:25Z,GW,2024-03-08T06:26:00Z,GW
 NTP,Network Time Protocol,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 NVD,NATIONAL VULNERABILITY DATABASE,"""The National Vulnerability Database (NVD) is the U.S. government repository of standards-based vulnerability management data represented using the Security Content Automation Protocol (SCAP). This data enables automation of vulnerability management, security measurement, and compliance. NVD includes databases of security checklists, security related software flaws, misconfigurations, product names, and impact metrics. NVD supports the Information Security Automation Program (ISAP).""",https://en.wikipedia.org/wiki/National_Vulnerability_Database,2024-03-01T09:23:00Z,GW,2024-03-01T09:23:00Z,GW
 OASIS,Organization for the Advancement of Structured Information Standards,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
