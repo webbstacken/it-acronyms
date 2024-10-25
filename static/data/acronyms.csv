@@ -450,11 +450,13 @@ RTO,"Recovery Time Objective ",,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 RTS,Ready to Send,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 SA,Source Address,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 SAAS,Software as a Service,"Software as a service (SaaS /sæs) is a software licensing and delivery model in which software is licensed on a subscription basis and is centrally hosted. SaaS is also known as ""on-demand software"" and Web-based/Web-hosted software",https://en.wikipedia.org/wiki/Software_as_a_service,2022-12-15T11:41:25Z,GW,2023-01-19T14:35:00Z,GW
+SAST,Static Application Security Testing,,,2024-10-25T11:41:25Z,GW,2024-10-25T11:41:25Z,GW
 SAM,Security Account Manager,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 SAML,Security Assertion Markup Language,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 SAN,Storage Area Network,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 SANCP,"Security Analyst Network Connection Profiler ",,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 SCA,Secure Customer Authentication,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
+SCA,Software Composition Analysis,,,2024-10-25T11:41:25Z,GW,2024-10-25T11:41:25Z,GW
 SCSI,"Small Computer System Interface ",,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 SCVP," Server-based Certificate Validation Protocol",,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
 SDL,Security Development Lifecycle,,,2022-12-15T11:41:25Z,GW,2022-12-15T11:41:25Z,GW
