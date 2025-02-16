@@ -9,10 +9,12 @@ YASWS was created as a platform to implement and experiment with different web-b
 ## Features
 
 - **CVSS Decoder**: Parses and explains Common Vulnerability Scoring System (CVSS) strings for versions 2.0, 3.0, 3.1, and 4.0
-- **Knowledge Base**: A growing collection of IT terms and concepts
+- **Date and Time**: Displays current time in multiple formats including UTC, GMT, and local time. Features timezone selection, DST information, and Unix epoch conversion
+- **Knowledge Base**: A growing collection of IT terms and concepts with search functionality
 - **Snake Game**: A classic snake game implementation
-- **Spelling Alphabet**: Converts text to phonetic alphabet representations
-- **Speech to Text**: A proof of concept for assisting hearing-impaired individuals with real-time speech transcription
+- **Spelling Alphabet**: Converts text to phonetic alphabet representations various phonetic alphabets
+- **Speech to Text**: A proof of concept (POC) for assisting hearing-impaired individuals with real-time speech transcription using Web Speech API
+
 
 ## Technical Stack
 
@@ -71,4 +73,4 @@ Parts of this project were developed with assistance from GitHub Copilot AI. See
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/webbstacken/yasws/blob/main/LICENSE) file for details.
