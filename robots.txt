@@ -1,2 +1,13 @@
+# robots.txt rules generated with assistance from GitHub Copilot AI
+# Last updated: February 2024
+
+# Deny all by default
 User-agent: *
-Allow: /
+Disallow: /
+
+# Allow only specific paths
+Allow: /$
+Allow: /index.html$
+
+# Add reasonable crawl rate
+Crawl-delay: 10
