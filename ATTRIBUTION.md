@@ -19,6 +19,10 @@ The following components were developed with significant assistance from GitHub 
 - `static/js/cvssdecoder.js`: Core CVSS parsing logic
 - `static/js/cvssdecoder_mvc.js`: MVC implementation for the decoder
 
+### Speech to Text Implementation
+
+- `static/js/speech_to_text_mvc.js`: Some UI implementation and recording controls
+
 ### Time and Week Implementation
 
 - `static/js/time_mvc.js`: Style and logic

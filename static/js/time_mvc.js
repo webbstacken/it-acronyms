@@ -67,32 +67,30 @@ const getOrganizedTimezones = () => {
 };
 
 const getDstInfo = (date) => {
-  const jan = new Date(date.getFullYear(), 0, 1).getTimezoneOffset();
-  const jul = new Date(date.getFullYear(), 6, 1).getTimezoneOffset();
-  const stdTimezoneOffset = Math.max(jan, jul);
-  const summerOffset = Math.min(jan, jul);
+    const jan = new Date(date.getFullYear(), 0, 1).getTimezoneOffset();
+    const jul = new Date(date.getFullYear(), 6, 1).getTimezoneOffset();
+    const stdTimezoneOffset = Math.max(jan, jul);
+    const summerOffset = Math.min(jan, jul);
 
-  const year = date.getFullYear();
-  const summerDate = new Date(year, 2, 31 - new Date(year, 2, 31).getDay(), 2, 0, 0);
-  const winterDate = new Date(year, 9, 31 - new Date(year, 9, 31).getDay(), 3, 0, 0);
+    const year = date.getFullYear();
+    // Last Sunday in March at 02:00
+    const summerDate = new Date(year, 2, 31 - new Date(year, 2, 31).getDay(), 2, 0, 0);
+    // Last Sunday in October at 03:00
+    const winterDate = new Date(year, 9, 31 - new Date(year, 9, 31).getDay(), 3, 0, 0);
 
-  return {
-      winter: `UTC${stdTimezoneOffset > 0 ? '-' : '+'}${Math.abs(Math.floor(stdTimezoneOffset/60))}:${formatNumber(stdTimezoneOffset%60)}`,
-      summer: `UTC${summerOffset > 0 ? '-' : '+'}${Math.abs(Math.floor(summerOffset/60))}:${formatNumber(summerOffset%60)}`,
-      current: date.getTimezoneOffset() < stdTimezoneOffset ? "Summer Time" : "Winter Time",
-      summerStart: summerDate.toLocaleString('en-GB', { 
-          month: 'long', 
-          day: 'numeric',
-          hour: '2-digit',
-          minute: '2-digit'
-      }),
-      winterStart: winterDate.toLocaleString('en-GB', {
-          month: 'long', 
-          day: 'numeric',
-          hour: '2-digit',
-          minute: '2-digit'
-      })
-  };
+    return {
+        winter: `UTC${stdTimezoneOffset > 0 ? '-' : '+'}${Math.abs(Math.floor(stdTimezoneOffset/60))}:${formatNumber(stdTimezoneOffset%60)}`,
+        summer: `UTC${summerOffset > 0 ? '-' : '+'}${Math.abs(Math.floor(summerOffset/60))}:${formatNumber(summerOffset%60)}`,
+        current: date.getTimezoneOffset() < stdTimezoneOffset ? "Summer Time" : "Winter Time",
+        summerStart: `${summerDate.toLocaleString('sv-SE', { 
+            month: 'long', 
+            day: 'numeric'
+        })} kl. 02:00`,
+        winterStart: `${winterDate.toLocaleString('sv-SE', { 
+            month: 'long', 
+            day: 'numeric'
+        })} kl. 03:00`
+    };
 }
 
 const getSelectedTimeZoneTime = (date, timezone) => {
@@ -206,7 +204,7 @@ const updateClock = (clockId) => {
               <div class="text-muted small mt-3">                
                   <div>
                       <small>
-                          [1] Winter time starts: ${dstInfo.winterStart} (clocks go back), summer time starts: ${dstInfo.summerStart} (clocks go forward)
+                          [1] Winter time starts: ${dstInfo.winterStart} (clocks go back 1h), summer time starts: ${dstInfo.summerStart} (clocks go forward 1h)
                       </small>
                   </div>
               </div>

@@ -7,6 +7,11 @@ const addContent = async (document) => {
   text += '      <a href="https://github.com/twbs/bootstrap/blob/main/LICENSE" class="link-secondary">View License</a></br>';  
   text += '      </br>';
   
+    
+  text += '      <code class="text-secondary">Bootstrap Icons v1.11.3 (MIT License)</code></br>';  
+  text += '      <a href="https://github.com/twbs/icons/blob/main/LICENSE" class="link-secondary">View License</a></br>';  
+  text += '      </br>';
+
   text += '      <code class="text-secondary">D3.js v7.8.2 (ISC License)</code></br>';
   text += '      <code class="text-secondary">Copyright 2010-2023 Mike Bostock</code></br>';
   text += '      <a href="https://github.com/d3/d3/blob/main/LICENSE" class="link-secondary">View License</a></br>';  

@@ -40,26 +40,45 @@ const setUpSpeechRecognition = (document, speechRecognition) => {
           console.log("Text: '" + text + "'");              
         });
       }          
-      document.getElementById("textId").innerHTML = text;
+      // Update text while preserving the transcript element
+      document.getElementById("transcriptText").innerHTML = text;
     }
+
+    // handler for when speech recognition ends
+    speechRecognition.onend = () => {
+      let rec = document.getElementById("recId");
+      if (rec.dataset.recording_started === "true") {
+          // Update UI to stopped state
+          rec.dataset.recording_started = false;
+          rec.innerHTML = `
+              <i class="bi bi-record-btn-fill text-danger" style="font-size: 4rem;"></i>
+              <span class="ms-3 text-danger fw-bold fs-2">REC</span>
+          `;
+      }
+    };  
 }
 
 const startRecording = (document, speechRecognition) => {   
   let textArea = document.getElementById("textId");
-  textArea.innerHTML = "";  
+  // Create new empty div with same ID for transcript
+  textArea.innerHTML = '<div id="transcriptText" class="p-4" style="font-size: 24px; line-height: 1.4;"></div>';
   let rec = document.getElementById("recId");
   rec.dataset.recording_started = true;  
-  rec.textContent = "STOPPA INSPELNING";
+  rec.innerHTML = `
+    <i class="bi bi-stop-btn-fill text-dark" style="font-size: 4rem;"></i>
+    <span class="ms-3 text-dark fw-bold fs-2">STOP</span>
+  `;
   speechRecognition.start();        
-  console.log("Recording started!");
 }
 
 const stopRecording = (document, speechRecognition) => {      
   let rec = document.getElementById("recId");
   rec.dataset.recording_started = false;  
-  rec.textContent = "STARTA INSPELNING";
+  rec.innerHTML = `
+    <i class="bi bi-record-btn-fill text-danger" style="font-size: 4rem;"></i>
+    <span class="ms-3 text-danger fw-bold fs-2">REC</span>
+  `;
   speechRecognition.stop();
-  console.log("Recording stopped!");  
 }
 
 const setupEventListener = (document, speechRecognition) => {
@@ -76,12 +95,55 @@ const setupView = (document) => {
 
   let text = "";       
   text += '<div class="d-grid gap-2">';           
-  text += '   <div id="textId" style="'+ style + '"></div>';
-  text += '   <button id="recId" class="btn btn-light" type="button" data-recording_started="false" style="margin: 12px;">STARTA INSPELNING</button>'; 
+  text += '   <div id="textId" style="'+ style + '">';
+  text += '     <div id="transcriptText" class="p-4 text-light-emphasis" style="font-size: 24px; line-height: 1.4; color: #adb5bd;">';
+  text += '       This app can assist hearing-impaired individuals by transcribing speech to text in real-time.<br><br>';
+  text += '       To start transcribing, press the REC button below. Recording will stop automatically after a period of silence,';
+  text += '       or you can stop it manually by pressing the STOP button.<br><br>';
+  text += '       The transcribed text will appear here.';
+  text += '     </div>';
+  text += '   </div>';
+  
+  // Font size controls
+  text += '   <div class="d-grid gap-2" style="margin: 12px;">';
+  text += '     <div class="btn-group w-100" role="group" aria-label="Font size controls">';
+  text += '       <button type="button" class="btn btn-outline-secondary w-50 d-flex justify-content-center align-items-center p-3" onclick="window.decreaseFontSize()">';
+  text += '         <i class="bi bi-dash-lg me-2"></i>Decrease Text Size';
+  text += '       </button>';
+  text += '       <button type="button" class="btn btn-outline-secondary w-50 d-flex justify-content-center align-items-center p-3" onclick="window.increaseFontSize()">';
+  text += '         <i class="bi bi-plus-lg me-2"></i>Increase Text Size';
+  text += '       </button>';
+  text += '     </div>';
+  text += '   </div>';
+  
+  // Record button
+  text += '   <button id="recId" class="btn btn-light d-flex justify-content-center align-items-center" type="button" data-recording_started="false" style="margin: 12px;">\
+              <i class="bi bi-record-btn-fill text-danger" style="font-size: 4rem;"></i>\
+              <span class="ms-3 text-danger fw-bold fs-2">REC</span>\
+              </button>';     
   text += '</div>'; 
 
   document.getElementById("centerId").innerHTML = text;    
 }
+
+// Font size control functions
+const increaseFontSize = () => {
+  const textElement = document.getElementById('transcriptText');
+  const currentSize = parseInt(window.getComputedStyle(textElement).fontSize);
+  textElement.style.fontSize = (currentSize + 2) + 'px';
+}
+
+const decreaseFontSize = () => {
+  const textElement = document.getElementById('transcriptText');
+  const currentSize = parseInt(window.getComputedStyle(textElement).fontSize);
+  if (currentSize > 12) {
+    textElement.style.fontSize = (currentSize - 2) + 'px';
+  }
+}
+
+// Make functions available globally
+window.increaseFontSize = increaseFontSize;
+window.decreaseFontSize = decreaseFontSize;
 
 export function initSpeechToText(document) {
   setupView(document);  
