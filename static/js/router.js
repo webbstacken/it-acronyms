@@ -1,7 +1,6 @@
 import { initAbout } from "./about_mvc.js";      
 import { initCreditsLicenses } from "./credits_licenses_mvc.js";      
 //import { initFourInARow } from "./four_in_a_row_mvc.js";
-//import { initHome } from "./home_mvc.js";      
 import { initKnowledgeBase } from "./knowledge_base_mvc.js";
 import { initSnake } from "./snake_mvc.js";   
 import { initSpellingAlphabet } from "./spelling_alphabet_mvc.js"; 
@@ -11,8 +10,7 @@ import { initTime } from "./time_mvc.js";
 
 const ROUTES = {
     "ABOUT": 0,
-    "KNOWLEDGE_BASE": 1,
-    //"HOME": 2,
+    "KNOWLEDGE_BASE": 1,    
     "YASNAKE": 3,
     //"FOUR_IN_A_ROW":4,
     "SPELLING_ALPHABETH": 5,
@@ -40,8 +38,6 @@ const route = (document, newRoute) => {
     }
 }
 
-// ...existing code...
-
 const initEventhandlers = (document) => {
     for (const key in ROUTES) {
         let id = key + "_ID";
@@ -53,6 +49,6 @@ const initEventhandlers = (document) => {
 }
 
 export function initRouter(document ) {          
-    route(document, ROUTES.KNOWLEDGE_BASE);    
+    route(document, ROUTES.TIME);    
     initEventhandlers(document);    
 }

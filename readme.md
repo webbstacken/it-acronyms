@@ -67,7 +67,7 @@ THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPL
 
 All tools and results are provided for informational purposes only. Users should independently verify results for critical applications.
 
-Parts of this project were developed with assistance from GitHub Copilot AI. See ATTRIBUTION.md for details.
+Parts of this project were developed with assistance from GitHub Copilot AI. See [ATTRIBUTION.md](https://github.com/webbstacken/yasws/blob/main/ATTRIBUTION.md) for details.
 
 ## License
 
